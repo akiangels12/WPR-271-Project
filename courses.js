@@ -101,7 +101,7 @@ const courseData = {
         title: "Diploma",
         code: "DIT002",
         duration: "2 years",
-        description: "This is a diploma course.",
+        description: "This is a diploma courseThis empowering diploma features on-trend specialisations aligned with real-world industry requirements. These specialisations will give you access to many exciting career opportunities and allow you to graduate in high demand.",
         modules: [
             { name: "Introduction to Programming", lecturer: "Prof. Brown", venue: "Room 201", studyGuide: "link_to_study_guide_A", video: "https://youtube.com/random_video_A" },
             { name: "Network Security", lecturer: "Dr. Adams", venue: "Room 301", studyGuide: "https://example.com/study-guide-bit1", video: "https://youtube.com/random_video_X" },
