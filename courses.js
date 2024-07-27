@@ -1,10 +1,39 @@
 const courses = {
     'HC01': { 
-        title: 'HC', 
-        modules: ['Math', 'Science'], 
-        lecturers: ['John Doe'], 
-        venue: 'Room 101',
-        description: 'A foundational course.'
+        title: 'Higher Certificate (HC)', 
+        modules: [
+            "Introduction to Economics",
+            "Principles of Marketing",
+            "Advanced Calculus",
+            "Introduction to Psychology",
+            "Fundamentals of Finance",
+            "Human Resource Management",
+            "Introduction to Computer Science",
+            "Business Law",
+            "Environmental Science",
+            "Introduction to Philosophy"
+        ],
+        lecturers: ["Dr. Smith",
+     "Ms. Johnson",
+    "Dr. Williams",
+    "Mr. Brown",
+    "Dr. Lee",
+    "Ms. Davis",
+    "Dr. Wilson",
+    "Mr. Miller",
+    "Dr. Moore",
+    "Ms. Taylor"], 
+        venue: [ "Room 101",
+            "Room 102",
+            "Room 103",
+            "Room 104",
+            "Room 105",
+            "Room 106",
+            "Room 107",
+            "Room 108",
+            "Room 109",
+            "Room 110"],
+        description: 'This Higher Certificate in IT is created in line with Belgium Campus’s mission to train young people to understand, use and apply ICT effectively, efficiently and in ethical ways, leading to gainful employment.'
     },
     'D01': { 
         title: 'DIT', 
@@ -58,7 +87,7 @@ document.getElementById('search-button').addEventListener('click', function() {
     const courseDetailsSection = document.getElementById('course-details-section');
     if (found) {
         courseDetailsSection.classList.remove('hidden');
-       
+        displayCourseDetails(foundCourseId);
     } else {
         courseDetailsSection.classList.add('hidden');
         

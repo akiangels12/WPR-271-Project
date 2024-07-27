@@ -35,6 +35,7 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
+    color: yellow;
 }
 
 main {
@@ -108,6 +109,19 @@ footer {
 margin-bottom: 30px;
 
 }
+.AvailableCourses {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+   background-color: rgb(255, 217, 0);
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+}
+.AvailableCourses p {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 0, 0); 
+}
 
 .hidden {
     display: none;
@@ -179,6 +193,17 @@ display: flex;
     color: yellow;
 }
 .completed {
-    background-color: #d3ffd3; /* Light green background for completed rows */
-    text-decoration: line-through; /* Strike-through text for completed modules */
+    background-color: #d3ffd3; 
+    text-decoration: line-through; 
+}
+#title{
+    display: flex;
+            align-items: center;
+            justify-content: center;           
+}
+#BClogo {
+    width: 200px; 
+    height: 50px;
+    margin-left: 40px; 
+    margin-bottom: 20px;
 }
