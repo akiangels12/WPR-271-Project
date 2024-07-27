@@ -34,11 +34,32 @@
         </section>
 
         <section id="Display-Course">
+            <h3 id="backgroundHC" class="course-title">Higher Certificate</h3>
+            <h3 id="backgroundDIT" class="course-title">Diploma</h3>
+            <h3 id="backgroundBIT" class="course-title">BIT</h3>
+            <h3 id="backgroundBCOM" class="course-title">BCOM</h3>
+        </section>
+        
+        <section id="Course-Details" style="display: none;">
+            <h2 id="courseTitle"></h2>
+            <p id="courseCode"></p>
+            <p id="courseDuration"></p>
+            <p id="courseDescription"></p>
             
-            <h3 id="backgroundHC">Higher Certificate</h3>
-            <h3 id="backgroundDIT">Diploma</h3>
-            <h3 id="backgroundBIT">BIT</h3>
-            <h3 id="backgroundBCOM">BCOM</h3>
+            <table id="courseTable" border="1">
+                <thead>
+                    <tr>
+                        <th>Module</th>
+                        <th>Lecturer</th>
+                        <th>Venue</th>
+                        <th>Study Guide</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+                <tbody id="courseTableBody">
+                    <!-- Dynamic rows will be inserted here -->
+                </tbody>
+            </table>
         </section>
         
     </main>

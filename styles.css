@@ -175,3 +175,6 @@ color: white;
 border-radius: 10px;
 display: flex;
 }
+#Display-Course h3:hover {
+    color: yellow;
+}
