@@ -102,3 +102,76 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+
+#search-button {
+margin-bottom: 30px;
+
+}
+
+.hidden {
+    display: none;
+}
+
+#Display-Course {
+    display: flex;
+    gap: 20px; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+#backgroundHC{
+background: url('HC.png') ;
+padding: 50px;
+background-size: cover;
+background-position: center;
+width: 200px;
+height: 150px;
+align-items: center;
+justify-content: center;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+color: white;
+border-radius: 10px;
+display: flex;
+}
+#backgroundDIT{
+    background: url('DIT.png') ;
+padding: 50px;
+background-size: cover;
+background-position: center;
+width: 200px;
+height: 150px;
+align-items: center;
+justify-content: center;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+color: white;
+border-radius: 10px;
+display: flex;
+}
+#backgroundBIT{
+    background: url('BIT.png') ;
+padding: 50px;
+background-size: cover;
+background-position: center;
+width: 200px;
+height: 150px;
+align-items: center;
+justify-content: center;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+color: white;
+border-radius: 10px;
+display: flex;
+}
+#backgroundBCOM{
+    background: url('BCOM.png') ;
+padding: 50px;
+background-size: cover;
+background-position: center;
+width: 200px;
+height: 150px;
+align-items: center;
+justify-content: center;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+color: white;
+border-radius: 10px;
+display: flex;
+}

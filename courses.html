@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
     <header>
         <h1>Belgium Campus</h1>
         <nav>
@@ -20,12 +21,31 @@
         </nav>
     </header>
     <main>
-        <h2>Courses</h2>
-        <p>Information about courses offered at Belgium Campus.</p>
+        <section id="search-section">
+            <h2>Search for Courses</h2>
+            <input type="text" id="search-bar" placeholder="Type course name">
+            <button id="search-button">Search</button>
+            <div id="course-list"></div>
+        </section>
+
+        <section id="course-details-section" class="hidden">
+            <div id="course-details"></div>
+            <button id="print-button" class="hidden" onclick="window.print()">Print Course</button>
+        </section>
+
+        <section id="Display-Course">
+            
+            <h3 id="backgroundHC">Higher Certificate</h3>
+            <h3 id="backgroundDIT">Diploma</h3>
+            <h3 id="backgroundBIT">BIT</h3>
+            <h3 id="backgroundBCOM">BCOM</h3>
+        </section>
+        
     </main>
     <footer>
         <p>&copy; 2024 Belgium Campus. All rights reserved.</p>
     </footer>
-    <script src="scripts.js"></script>
+    <script src="courses.js"></script>
 </body>
 </html>
+
