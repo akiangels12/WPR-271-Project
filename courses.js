@@ -85,7 +85,7 @@ const courseData = {
         description: "This is a higher certificate course.",
         modules: [
             { name: "Module 1", lecturer: "Dr. Smith", venue: "Room 101", studyGuide: "link_to_study_guide_1", video: "https://youtube.com/random_video_1" },
-            { name: "Module 2", lecturer: "Ms. Johnson", venue: "Room 102", studyGuide: "link_to_study_guide_2", video: "https://youtube.com/random_video_2" }
+            { name: "Module 2", lecturer: "Ms. Johnson", venue: "Room 102", studyGuide: "link_to_study_guide_2", video: "https://youtube.com/random_video_2"}
         ]
     },
     "backgroundDIT": {
@@ -148,6 +148,86 @@ document.querySelectorAll('.course-title').forEach(header => {
         }
     });
 });
+
+
+const completedModules = new Set();
+
+document.querySelectorAll('.course-title').forEach(header => {
+    header.addEventListener('click', function() {
+        const courseId = this.id;
+        const course = courseData[courseId];
+        
+        if (course) {
+            document.getElementById('Course-Details').style.display = 'block';
+            document.getElementById('courseTitle').innerText = course.title;
+            document.getElementById('courseCode').innerText = `Course Code: ${course.code}`;
+            document.getElementById('courseDuration').innerText = `Duration: ${course.duration}`;
+            document.getElementById('courseDescription').innerText = course.description;
+            
+            const tableBody = document.getElementById('courseTableBody');
+            tableBody.innerHTML = '';
+            course.modules.forEach((module, index) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${module.name}</td>
+                    <td>${module.lecturer}</td>
+                    <td>${module.venue}</td>
+                    <td><a href="${module.studyGuide}" download>Download Study Guide</a></td>
+                    <td><a href="${module.video}" target="_blank">Watch Video</a></td>
+                    <td><button class="complete-btn" data-index="${index}">Mark as Completed</button></td>
+                `;
+                tableBody.appendChild(row);
+            });
+
+            // Add click event listeners for the "Mark as Completed" buttons
+            document.querySelectorAll('.complete-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const index = this.getAttribute('data-index');
+                    const moduleName = course.modules[index].name;
+
+                    // Toggle completion state
+                    if (completedModules.has(moduleName)) {
+                        completedModules.delete(moduleName);
+                        this.textContent = 'Mark as Completed';
+                        this.parentElement.parentElement.classList.remove('completed');
+                    } else {
+                        completedModules.add(moduleName);
+                        this.textContent = 'Completed';
+                        this.parentElement.parentElement.classList.add('completed');
+                    }
+
+                    updateCompletedList();
+                });
+            });
+        } else {
+            document.getElementById('Course-Details').style.display = 'none';
+            alert('Course details not found.');
+        }
+    });
+});
+
+
+function updateCompletedList() {
+    const completedList = document.getElementById('completedModulesList');
+    completedList.innerHTML = '';
+
+    if (completedModules.size > 0) {
+        const orderedList = document.createElement('ol');
+        completedModules.forEach(moduleName => {
+            const listItem = document.createElement('li');
+            listItem.textContent = moduleName;
+            orderedList.appendChild(listItem);
+        });
+        completedList.appendChild(orderedList);
+    } else {
+        completedList.textContent = 'No modules completed yet.';
+    }
+}
+
+
+
+
+
 
 
 

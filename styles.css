@@ -178,3 +178,7 @@ display: flex;
 #Display-Course h3:hover {
     color: yellow;
 }
+.completed {
+    background-color: #d3ffd3; /* Light green background for completed rows */
+    text-decoration: line-through; /* Strike-through text for completed modules */
+}
