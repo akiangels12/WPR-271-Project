@@ -58,10 +58,10 @@ document.getElementById('search-button').addEventListener('click', function() {
     const courseDetailsSection = document.getElementById('course-details-section');
     if (found) {
         courseDetailsSection.classList.remove('hidden');
-        printButton.classList.remove('hidden');
+       
     } else {
         courseDetailsSection.classList.add('hidden');
-        printButton.classList.add('hidden');
+        
     }
 });
 
@@ -261,6 +261,17 @@ function updateCompletedList() {
         completedList.textContent = 'No modules completed yet.';
     }
 }
+
+    // Print button functionality
+    document.getElementById('printCourseButton').addEventListener('click', () => {
+        window.print(); // Opens the print dialog
+    });
+
+
+
+
+
+
 
 
 
