@@ -207,3 +207,43 @@ display: flex;
     margin-left: 40px; 
     margin-bottom: 20px;
 }
+#courseTable {
+    border: none; /* Remove border around the entire table */
+    background-color: transparent; /* Transparent background */
+    box-shadow: none; /* Remove box shadow */
+    border-collapse: collapse; /* Collapse cell borders */
+    border-spacing: 0; /* Remove space between cells */
+}
+
+#courseTable th, 
+#courseTable td {
+    border: none;
+    padding: 10px;
+}
+
+#courseTable tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Light gray for odd rows */
+}
+
+#courseTable tr:nth-child(even) {
+    background-color: #e9e9e9; /* Slightly darker gray for even rows */
+}
+
+#courseTable th, 
+#courseTable td {
+    background-color: transparent; /* Ensure individual cells are transparent */
+}
+
+.complete-btn {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.complete-btn:hover {
+    background-color: #e0e0e0;
+}
+
