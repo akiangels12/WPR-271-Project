@@ -296,6 +296,13 @@ function updateCompletedList() {
         window.print(); // Opens the print dialog
     });
 
+    document.querySelectorAll('.enroll-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const courseId = this.getAttribute('data-course-id');
+            window.location.href = `enroll.html?courseId=${courseId}`;
+        });
+    });
+
 
 
 
