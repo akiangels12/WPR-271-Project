@@ -37,7 +37,7 @@ const courses = {
         description: 'This Higher Certificate in IT is created in line with Belgium Campus’s mission to train young people to understand, use and apply ICT effectively, efficiently and in ethical ways, leading to gainful employment.'
     },
     'D01': { 
-        title: 'DIT', 
+        title: 'Diploma(DIT)', 
          modules: [
             "Introduction to Programming",
             "Network Security",
@@ -78,7 +78,7 @@ const courses = {
         description: 'This is a diploma courseThis empowering diploma features on-trend specialisations aligned with real-world industry requirements. These specialisations will give you access to many exciting career opportunities and allow you to graduate in high demand.'
     },
     'BIT01': { 
-        title: 'BIT', 
+        title: 'Bachelor of Information Technology(BIT)', 
         modules: [ "Network Security",
             "Software Engineering",
             "Database Systems",
@@ -114,7 +114,7 @@ const courses = {
         description: 'A bachelor’s degree remains the entry standard in many professional careers. Its long-term benefits make it well worth the initial investment as it allows you professional entry into some of the top names in IT. It will also give you the knowledge and skills to create your own enterprise within the sector. Overall, an IT degree is a worthwhile investment in your future.'
     },
     'BCOM01': { 
-        title: 'BCOM', 
+        title: 'Bachelor of Computer(BCOM)', 
         modules: [ "Financial Accounting",
             "Marketing Management",
             "Business Law",
@@ -191,7 +191,7 @@ function displayCourseDetails(code) {
     const course = courses[code];
     const courseDetails = document.getElementById('course-details');
     courseDetails.innerHTML = `
-        <h3>Course Title: ${course.title}</h3>
+        <h3>${course.title}</h3>
         <p><strong>Description:</strong> ${course.description}</p>
         <p><strong>Modules:</strong> ${course.modules.join(', ')}</p>
         <p><strong>Lecturers:</strong> ${course.lecturers.join(', ')}</p>

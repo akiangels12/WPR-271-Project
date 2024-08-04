@@ -147,27 +147,70 @@ footer {
     margin-top: 20px;
 }
 
-
-/* Formal and neat styling for .AvailableCourses */
-.AvailableCourses {
-    text-align: center;
-    margin: 20px auto; /* Center the container horizontally */
-    padding: 20px; /* Increased padding for better spacing */
-    width: auto; /* Set a responsive width */
-     /* Limit the maximum width */
-    background-color: #ffee00; /* Use a neutral background color */
-    border: 1px solid #ccc; /* Use a soft border color */
-    border-radius: 12px; /* Slightly increased border radius */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
-    font-family: Arial, sans-serif; /* Use a clean, professional font */
+#course-details {
+    padding: 20px; /* Add padding for spacing inside the container */
+    margin: 20px auto; /* Center horizontally and add vertical spacing */
+    max-width: 800px; /* Limit the maximum width for better readability */
+    background-color: #ffffff; /* Use a clean white background */
+    border: 1px solid #ddd; /* Soft border for subtle separation */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Professional font family */
+    color: #333; /* Dark text color for readability */
+}
+#course-details h1,
+#course-details h2,
+#course-details h3 {
+    color: #222; /* Slightly darker color for headings */
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 15px; /* Space below headings */
 }
 
-/* Add a heading style for better text appearance */
+#course-details p {
+    line-height: 1.6; /* Improve readability with increased line height */
+    margin-bottom: 15px; /* Space between paragraphs */
+}
+
+#course-details ul,
+#course-details ol {
+    margin: 0;
+    padding-left: 20px; /* Indent list items */
+}
+
+#course-details li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+#course-details a {
+    color: #007bff; /* Professional link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+#course-details a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+
+
+
+.AvailableCourses {
+    text-align: center;
+    margin: 20px auto; 
+    padding: 20px; 
+     
+    background-color: #ffee00; 
+    border: 1px solid #ccc; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-family: Arial, sans-serif; 
+}
+
+
 .AvailableCourses h2 {
-    margin-top: 0; /* Remove top margin */
-    margin-bottom: 10px; /* Space below heading */
-    color: #333; /* Darker color for better readability */
-    font-size: 1.5em; /* Slightly larger font size for emphasis */
+    margin-top: 0; 
+    margin-bottom: 10px; 
+    color: #333; 
+    font-size: 1.5em; 
 }
 .AvailableCourses p {
     font-size: 24px;
