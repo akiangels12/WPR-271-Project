@@ -103,19 +103,71 @@ footer {
     width: 100%;
     bottom: 0;
 }
+#search-section {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+#search-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+#search-bar {
+    width: 30%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
 
 
 #search-button {
-margin-bottom: 30px;
+    padding: 5px;
+    font-size: 1em;
+    color: #fff;
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 
 }
+#search-button:hover {
+    background-color: darkred;
+}
+
+#course-list {
+    margin-top: 20px;
+}
+
+
+/* Formal and neat styling for .AvailableCourses */
 .AvailableCourses {
     text-align: center;
-    margin: 20px;
-    padding: 20px;
-   background-color: rgb(255, 217, 0);
-    border: 1px solid #ddd; 
-    border-radius: 8px; 
+    margin: 20px auto; /* Center the container horizontally */
+    padding: 20px; /* Increased padding for better spacing */
+    width: auto; /* Set a responsive width */
+     /* Limit the maximum width */
+    background-color: #ffee00; /* Use a neutral background color */
+    border: 1px solid #ccc; /* Use a soft border color */
+    border-radius: 12px; /* Slightly increased border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    font-family: Arial, sans-serif; /* Use a clean, professional font */
+}
+
+/* Add a heading style for better text appearance */
+.AvailableCourses h2 {
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 10px; /* Space below heading */
+    color: #333; /* Darker color for better readability */
+    font-size: 1.5em; /* Slightly larger font size for emphasis */
 }
 .AvailableCourses p {
     font-size: 24px;
@@ -146,48 +198,67 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 color: white;
 border-radius: 10px;
 display: flex;
+transition: transform 0.3s ease; 
 }
-#backgroundDIT{
-    background: url('DIT.png') ;
-padding: 50px;
-background-size: cover;
-background-position: center;
-width: 200px;
-height: 150px;
-align-items: center;
-justify-content: center;
-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-color: white;
-border-radius: 10px;
-display: flex;
+#backgroundHC:hover {
+    transform: scale(1.1); 
 }
-#backgroundBIT{
-    background: url('BIT.png') ;
-padding: 50px;
-background-size: cover;
-background-position: center;
-width: 200px;
-height: 150px;
-align-items: center;
-justify-content: center;
-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-color: white;
-border-radius: 10px;
-display: flex;
+#backgroundDIT {
+    background: url('DIT.png') no-repeat center center;
+    background-size: cover;
+    padding: 50px;
+    width: 200px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    transition: transform 0.3s ease; 
 }
-#backgroundBCOM{
-    background: url('BCOM.png') ;
-padding: 50px;
-background-size: cover;
-background-position: center;
-width: 200px;
-height: 150px;
-align-items: center;
-justify-content: center;
-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-color: white;
-border-radius: 10px;
-display: flex;
+
+
+#backgroundDIT:hover {
+    transform: scale(1.1); 
+}
+#backgroundBIT {
+    background: url('BIT.png') no-repeat center center;
+    background-size: cover;
+    padding: 50px;
+    width: 200px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    transition: transform 0.3s ease; 
+}
+
+
+#backgroundBIT:hover {
+    transform: scale(1.1); 
+}
+#backgroundBCOM {
+    background: url('BCOM.png') no-repeat center center;
+    background-size: cover;
+    padding: 50px;
+    width: 200px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+/* Zoom effect on hover */
+#backgroundBCOM:hover {
+    transform: scale(1.1); /* Adjust the scale value as needed for zoom effect */
 }
 #Display-Course h3:hover {
     color: yellow;
