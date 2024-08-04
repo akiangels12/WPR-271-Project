@@ -278,39 +278,7 @@ const courseData = {
         ]
         
     },
-};
-
-document.querySelectorAll('.course-title').forEach(header => {
-    header.addEventListener('click', function() {
-        const courseId = this.id;
-        const course = courseData[courseId];
-        
-        if (course) {
-            document.getElementById('Course-Details').style.display = 'block';
-            document.getElementById('courseTitle').innerText = course.title;
-            document.getElementById('courseCode').innerText = `Course Code: ${course.code}`;
-            document.getElementById('courseDuration').innerText = `Duration: ${course.duration}`;
-            document.getElementById('courseDescription').innerText = course.description;
-            
-            const tableBody = document.getElementById('courseTableBody');
-            tableBody.innerHTML = '';
-            course.modules.forEach(module => {
-                const row = document.createElement('tr');
-                row.innerHTML = `
-                    <td>${module.name}</td>
-                    <td>${module.lecturer}</td>
-                    <td>${module.venue}</td>
-                    <td><a href="${module.studyGuide}" download>Download Study Guide</a></td>
-                    <td><a href="${module.video}" target="_blank">Watch Video</a></td>
-                `;
-                tableBody.appendChild(row);
-            });
-        }
-    });
-});
-
-
-const completedModules = new Set();
+};const completedModules = new Set();
 
 document.querySelectorAll('.course-title').forEach(header => {
     header.addEventListener('click', function() {
