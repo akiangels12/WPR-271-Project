@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belgium Campus - Contact Us</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
     <header>
@@ -22,10 +23,66 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="contactMain">
         <h2>Contact Us</h2>
-        <p>Contact information for Belgium Campus.</p>
+        <form action=/contact method="GET">
+            <fieldset>
+                <label for="EnquiryType">Enquiry Type: <span>*</span></label> <br>
+                <select name="" id="EnquiryType" required>
+                     <option value="">Select an enquiry type</option>
+                     <option value="General">General</option>
+                     <option value="Complaint">Complaint</option>
+                     <option value="Course">Course</option>
+                     <option value="Admission">Admission</option>
+                     <option value="Sponsorship">Sponsorship</option>
+                     <option value="Compliment">Compliment</option>
+                </select> <br>
+                
+
+                <label for="FirstName">First Name: <span>*</span></label> <br>
+                <input type="text" required placeholder="Samantha"> <br>
+                <label for="LastName">Last Name: <span>*</span></label> <br>
+                <input type="text" required placeholder="Maphake" class="lastName"> <br>
+                <label for="Email">Email: <span>*</span></label> <br>
+                <input type="email" required placeholder="samanthanthamanemaphake@gmail.com"> <br>
+                <label for="Phone">Phone: <span>*</span></label> <br>
+                <input type="text" required placeholder="(+27) 82 264 3345"> <br>
+                <label for="Message">Message:</label> <br>
+                <textarea name="" id="" placeholder="Write a message"></textarea> <br>
+                <button class="buttonOne" type="submit">Submit</button>
+            </fieldset>
+        </form>
+
+
     </main>
+    <section id="wholeSection">
+        <section>
+            <div>
+                <h3>Working Hours</h3>
+            </div>
+            <div id="workingHours">
+                <p>Monday: 8:00 AM - 5:00 PM</p>
+                <p>Tuesday: 8:00 AM - 5:00 PM</p>
+                <p>Wednesday: 8:00 AM - 5:00 PM</p>
+                <p>Thursday: 8:00 AM - 5:00 PM</p>
+                <p>Friday: 8:00 AM - 4:00 PM</p>
+                <p>Saturday: 8:00 AM - 12:00 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+        </section>
+        
+   
+     <section>
+         <div>
+            <h3>Contact Information</h>
+         </div>
+         <div id="contactInfo">
+             <p>Phone: (+27) 82 264 3345</p>
+             <p>Email: samanthanthamanemaphake@gmail.com</p>
+             <p>Address: 138 Main Street, Belgium Campus</p>
+         </div>
+      </section>
+   </section>
     <footer>
         <p>&copy; 2024 Belgium Campus. All rights reserved.</p>
     </footer>

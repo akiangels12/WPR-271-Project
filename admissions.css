@@ -1,0 +1,342 @@
+.heading{
+    margin-left: 400px;
+    margin-right: 400px;
+}
+form{
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+form input{
+    padding: 10px;
+    border: 1px solid #c7c1c1;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+form select{
+    padding: 10px;
+    border: 1px solid #c7c1c1;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.title{
+    margin-left: 32px;
+}
+.studentTitle{
+    margin-left: 519px;
+    width: 548px;
+}
+#LastName{
+    margin-left: 463px;
+    width: 528px;
+}
+.lastName{
+    margin-left:32px;
+}
+#FirstName{
+    margin-left: 460px;
+    width: 530px;
+}
+.firstName{
+    margin-left:32px;
+}
+#IdNumber{
+    margin-left: 465px;
+    width: 530px;
+}
+.idNumber{
+    margin-left:32px;
+}
+#studentEmail{
+    margin-left: 507px;
+    width: 530px;
+}
+.email{
+    margin-left:32px;
+}
+#alternateNumber{
+    margin-left: 405px;
+    width: 531px;
+}
+.alternateNumber{
+    margin-left:32px;
+}
+#primaryNumber{
+    margin-left: 434px;
+    width: 531px;
+}
+.primarynumber{
+    margin-left:32px;
+}
+#studentaddress{
+    margin-left: 484px;
+    width: 531px;
+}
+.studentaddress{
+    margin-left:32px;
+}
+#Suburb1{
+    margin-left:493px;
+    width: 531px;
+}
+.suburb{
+    margin-left:32px;
+}
+.country{
+    margin-left:32px;
+}
+#country{
+    margin-left:488px;
+    width: 552px;
+}
+.province{
+    margin-left:32px;
+}
+#selectprovince{
+    margin-left:491px;
+    width: 554px;
+}
+.city{
+    margin-left:32px;
+}
+#City{
+    margin-left:522px;
+    width: 532px;
+}
+.postalCode{
+    margin-left:32px;
+}
+#PostalCode{
+    margin-left:452px;
+    width: 532px;
+}
+.race{
+    margin-left:32px;
+}
+#selectrace{
+    margin-left:514px;
+    width: 554px;
+}
+.Nationality{
+    margin-left:32px;
+}
+#selectnation{
+    margin-left:464px;
+    width: 556px;
+}
+.dateofbirth{
+    margin-left:32px;
+}
+#dateOfBirth{
+    margin-left:448px;
+    width: 534px;
+}
+.gender{
+    margin-left:32px;
+}
+#maleLabel{
+    margin-left: 494px;
+}
+.disability{
+    margin-left:32px;
+}
+#disability{
+    margin-left:289px;
+    width: 555px;
+}
+
+
+#selectQualification{
+    margin-left:451px;
+    width: 552px;
+}
+
+.Qualification{
+    margin-left:32px;
+}
+#selectCampus{
+    margin-left:489px;
+    width: 552px;
+}
+
+.campus{
+    margin-left:32px;
+}
+.year{
+    margin-left:32px;
+}
+#selectInTakeYear{
+    margin-left:458px;
+    width: 551px;
+}
+.mode{
+    margin-left:32px;
+}
+#selectMode{
+    margin-left:439px;
+    width: 551px;
+}
+    
+.parentTitle{
+    margin-left:32px;
+}
+#selectParentTitle{
+    margin-left:543px;
+    width: 552px;
+}
+.parentfullname{
+    margin-left:32px;
+}
+#ParentName{
+    margin-left:474px;
+    width: 530px;
+}
+.parentemail{
+    margin-left:32px;
+}
+#ParentEmail{
+    margin-left:512px;
+    width: 530px;
+}
+.parentphone{
+    margin-left:32px;
+}
+#ParentPhone{
+    margin-left:430px;
+    width: 530px;
+}
+.parentaddress{
+    margin-left:32px;
+}
+#ParentAddress{
+    margin-left:489px;
+    width: 530px;
+}
+.relationship{
+    margin-left:32px;
+}
+#Relationship{
+    margin-left:453px;
+    width:552px;
+}
+.highestdegree{
+    margin-left:32px;
+}
+#HighestDegree{
+    margin-left:429px;
+    width: 553px;
+}
+.degreefield{
+    margin-left:32px;
+}
+#DegreeField{
+    margin-left:453px;
+    width: 530px;
+}
+.yearofcompletion{
+    margin-left:32px;
+}
+#YearOfCompletion{
+    margin-left:397px;
+    width: 530px;
+}
+.Institution{
+    margin-left:32px;
+}
+#InstitutionSchool{
+    margin-left:473px;
+    width: 530px;
+}
+
+
+.photo{
+    margin-left: 32px;
+}
+#Photo{
+    margin-left: 512px;
+    width: 529px;
+}
+.idcopy{
+    margin-left: 32px;
+}
+#IDCopy{
+    margin-left: 499px;
+    width: 530px;
+}
+.transcript{
+    margin-left: 32px;
+}
+#Transcript{
+    margin-left: 488px;
+    width: 530px;
+}
+input[type="text"],
+input[type="email"]{
+    padding: 10px;
+    border: 1px solid #d4cbcb;
+    border-radius: 5px;
+    font-size: 1em;
+    resize: vertical;
+    width: 745px; 
+    margin-bottom: 10px;
+}
+.firstField{
+    border: none;
+}
+.secondField{
+    border:none;
+}
+.thirdField{
+    border:none;
+}
+.fourthField{
+    border:none;
+}
+#lastField{
+    border:none;
+}
+div h2{
+    background-color: rgb(252, 6, 6);
+    color: rgb(253, 249, 249);
+}
+span{
+    color:red;
+}
+.matricResults{
+    margin-left: 32px;
+    margin-bottom: 10px;
+}
+#matricResults{
+    margin-left: 440px;
+    width:530px;
+}
+.buttons #submitButton{
+    background-color: rgb(252, 6, 6);
+    color: rgb(253, 249, 249);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 1000px;
+    cursor: pointer;
+}
+.buttons #resetButton{
+    background-color: rgb(252, 6, 6);
+    color: rgb(253, 249, 249);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons #submitButton:hover,
+.buttons #resetButton:hover{
+    color: red;
+    background-color: yellow;
+}
+

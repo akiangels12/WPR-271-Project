@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belgium Campus - Admissions</title>
+    <link rel="stylesheet" href="admissions.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="admissions.js"></script>
 </head>
 <body>
     <header>
@@ -23,8 +25,269 @@
         </nav>
     </header>
     <main>
-        <h2>Admissions</h2>
-        <p>Information about admissions at Belgium Campus.</p>
+        <h2 class="heading">Belgium Campus Application Form</h2>
+        <form action="" id="myApplicationForm" >
+            <fieldset class="firstField">
+                <div>
+                    <h2>Personal Information</h2>
+                </div>
+                <label for="Title" class="title">Title: <span>*</span></label>
+                <select name="" id=""  class="studentTitle">
+                    <option value="">Select</option>
+                    <option value="Miss">Miss</option>
+                    <option value="Mr">Mr.</option>
+                    <option value="Mrs">Mrs.</option>
+                    <option value="PhD">Dr.</option>
+                    <option value="Prof">Prof.</option>
+                </select> <br>
+                <label for="LastName" class="lastName">Last Name: <span>*</span></label>
+                <input type="text" id="LastName"> <br>
+                <label for="FirstName" class="firstName">First Name: <span>*</span></label>
+                <input type="text" id="FirstName" required> <br>
+                <label for="IDNumber" class="idNumber">Id Number: <span>*</span></label>
+                <input type="text" id="IdNumber"> <br>
+                <label for="Email" class="email">Email: <span>*</span></label>
+                <input type="email" required id="studentEmail" pattern="[a-zA-Z0-9._%+-]+@gmail\.com" 
+                minlength="10" maxlength="30"> <br>
+                <label for="AlternateNumber" class="alternateNumber">Alternate Number: <span>*</span></label>
+                <input type="text" required id="alternateNumber"> <br>
+                <label for="PrimaryNumber" class="primarynumber">Primary Number</label>
+                <input type="text" id="primaryNumber"> <br>
+                <label for="Address" class="studentaddress">Address: <span>*</span></label>
+                <input type="text" id="studentaddress" required> <br>
+                <label for="Suburb" class="suburb">Suburb: <span>*</span></label>
+                <input type="text" id="Suburb1" required> <br>
+                <label for="Country" class="country">Country: <span>*</span></label>
+                <select name="" id="country">
+                     <option value="Select your country">Select</option>
+                     <option value="South Africa">South Africa</option>
+                     <option value="United Kingdom">United Kingdom</option>
+                     <option value="United States">United States</option>
+                     <option value="Canada">Canada</option>
+                     <option value="Ireland">Ireland</option>
+                     <option value="Australia">Australia</option>
+                     <option value="New Zealand">New Zealand</option>
+                     <option value="Germany">Germany</option>
+                     <option value="France">France</option>
+                     <option value="Italy">Italy</option>
+                     <option value="Spain">Spain</option>
+                     <option value="Netherlands">Netherlands</option>
+                     <option value="Portugal">Portugal</option>
+                     <option value="Belgium">Belgium</option>
+                     <option value="Switzerland">Switzerland</option>
+                     <option value="Austria">Austria</option>
+                     <option value="Sweden">Sweden</option>
+                     <option value="Finland">Finland</option>
+                     <option value="Norway">Norway</option>
+                     <option value="Denmark">Denmark</option>
+                     <option value="Iceland">Iceland</option>
+                     <option value="Estonia">Estonia</option>
+                     <option value="Poland">Poland</option>
+                     <option value="Latvia">Latvia</option>
+                </select> <br>
+                <label for="Province" class="province">Provice: <span>*</span></label>
+                <select name="" id="selectprovince">
+                    <option value="">Select: <span>*</span></option>
+                    <option value="Mpumalanga">Mpumalanga</option>
+                    <option value="Limpopo">Limpopo</option>
+                    <option value="Gauteng">Gauteng</option>
+                    <option value="North-West">North-West</option>
+                    <option value="Free State">Free State</option>
+                    <option value="KwaZulu-Natal">KwaZulu-Natal</option>
+                    <option value="Eastern Cape">Eastern Cape</option>
+                    <option value="Western Cape">Western Cape</option>
+                    <option value="Northern Cape">Northern Cape</option>
+                </select> <br>
+                <label for="City" class="city">City: <span>*</span></label>
+                <input type="text" id="City" required> <br>
+                <label for="PostalCode" class="postalCode">Postal Code: <span>*</span></label>
+                <input type="text" id="PostalCode" required> <br>
+                <label for="Race" class="race">Race: <span>*</span></label>
+                <select name="" id="selectrace">
+                    <option value="">Select</option>
+                    <option value="White">White</option>
+                    <option value="Black">Black</option>
+                    <option value="asian">Asian</option>
+                    <option value="Colored">Coloured</option>
+                    <option value="Other">Other</option>
+                </select> <br>
+                <label for="Nationality" class="Nationality">Nationality: <span>*</span></label>
+                <select name="" id="selectnation">
+                    <option value="">Select</option>
+                    <option value="Afghan">Afghan</option>
+                    <option value="Albanian">Albanian</option>
+                    <option value="Algerian">Algerian</option>
+                    <option value="American">American</option>
+                    <option value="Argentine">Argentine</option>
+                    <option value="Australian">Australian</option>
+                    <option value="Bangladeshi">Bangladeshi</option>
+                    <option value="Belgian">Belgian</option>
+                    <option value="Brazilian">Brazilian</option>
+                    <option value="British">British</option>
+                    <option value="Canadian">Canadian</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Colombian">Colombian</option>
+                    <option value="Dutch">Dutch</option>
+                    <option value="Ethiopian">Ethiopian</option>
+                    <option value="French">French</option>
+                    <option value="German">German</option>
+                    <option value="Indian">Indian</option>
+                    <option value="Indonesian">Indonesian</option>
+                    <option value="Italian">Italian</option>
+                    <option value="Jamaican">Jamaican</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="Korean">Korean</option>
+                    <option value="Mexican">Mexican</option>
+                    <option value="Moroccan">Moroccan</option>
+                    <option value="Nigerian">Nigerian</option>
+                    <option value="Polish">Polish</option>
+                    <option value="Portuguese">Portuguese</option>
+                    <option value="Russian">Russian</option>
+                    <option value="Somali">Somali</option>
+                    <option value="South African">South African</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="Swedish">Swedish</option>
+                    <option value="Turkish">Turkish</option>
+                    <option value="Yemeni">Yemeni</option>
+                    <option value="Zambian">Zambian</option>
+                    <option value="Other">Other</option>
+
+                </select> <br>
+                <label for="DateOfBirth" class="dateofbirth">Date of Birth: <span>*</span></label>
+                <input type="date" name="" id="dateOfBirth"> <br>
+                    <label for="Gender" class="gender">Gender: <span>*</span></label>
+                
+                    <label for="male" id="maleLabel">Male</label>
+                 <input type="radio" id="male" name="gender" value="male">
+                 <label for="female" id="femaleLabel">Female</label>
+                 <input type="radio" id="female" name="gender" value="female">
+                 <label for="other" id="otherLabel">Other</label> 
+                 <input type="radio" id="other" name="gender" value="other">
+                
+
+                 <br>
+                <label for="Indicate if you have disability" class="disability">Please state if you have disability</label>
+                <select name="" id="disability">
+                    <option value="Select">Select</option>
+                    <option value="Multiple">Multiple</option>
+                    <option value="Physical">Physical</option>
+                    <option value="Sight">Sight</option>
+                    <option value="Hearing">Hearing</option>
+                    <option value="None">None</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="secondField">
+                <div>
+                    <h2>Qualification</h2>
+                </div>
+                <label for="Qualification" class="Qualification">Qualification: <span>*</span></label>
+                <select name="" id="selectQualification">
+                    <option value="">Select</option>
+                    <option value="HigherCertificate">Higher Certificate</option>
+                    <option value="DIT">Diploma</option>
+                    <option value="BIT">BIT</option>
+                    <option value="BCOM">BCOM</option>
+                </select> <br>
+                <label for="Campus" class="campus">Campus: <span>*</span></label>
+                <select name="" id="selectCampus">
+                    <option value="">Select</option>
+                    <option value="Tshwane">Tshwane</option>
+                    <option value="KemptonPark">Kempton Park</option>
+                    <option value="Polokwane">Polokwane</option>
+                    <option value="Randburg">Randburg</option>
+                </select> <br>
+                <label for="InTakeYear" class="year">In Take Year: <span>*</span></label> 
+                <select name="" id="selectInTakeYear">
+                    <option value="">Select</option>
+                    <option value="2024-September">2024-September</option>
+                    <option value="2025-February">2025-February</option>
+                    <option value="2025-May">2025-May</option>
+                </select> <br>
+                <label for="DeliveryMode" class="mode">Delivery Mode: <span>*</span></label>
+                <select name="" id="selectMode">
+                    <option value="">Select</option>
+                    <option value="online">Online</option>
+                    <option value="face-to-face">Face-to-Face</option>
+                </select>
+            </fieldset>
+            
+            <fieldset class="thirdField">
+                <div>
+                    <h2>Parent / Guardian Details</h2>
+                </div>
+                <label for="Title" class="parentTitle">Title</label>
+                <select name="" id="selectParentTitle">
+                    <option value="Select">Select</option>
+                    <option value="Mr">Mr.</option>
+                    <option value="Mrs">Mrs.</option>
+                    <option value="Miss">Miss.</option>
+                    <option value="Dr">Dr.</option>
+                    <option value="Sir">Sir.</option>
+                    <option value="Prof">Prof.</option>
+
+                </select> <br>
+                <label for="ParentName" class="parentfullname">Full Name: <span>*</span></label>
+                <input type="text" id="ParentName" required> <br>
+                <label for="ParentEmail" class="parentemail">Email: <span>*</span></label>
+                <input type="email" id="ParentEmail" required> <br>
+                <label for="ParentPhone" class="parentphone">Mobile Number: <span>*</span></label>
+                <input type="tel" id="ParentPhone" required> <br>
+                <label for="Address" class="parentaddress">Address: <span>*</span></label>
+                <input type="text" id="ParentAddress" required> <br>
+                <label for="Relationship" class="relationship">Relationship: <span>*</span></label>
+                <select id="Relationship" required>
+                    <option value="Select">Select</option>
+                    <option value="father">Father</option>
+                    <option value="mother">Mother</option>
+                    <option value="grandfather">Grandfather</option>
+                    <option value="grandmother">Grandmother</option>
+                    <option value="brother">Brother</option>
+                    <option value="sister">Sister</option>
+                    <option value="other">Other</option>
+                </select> <br>
+            </fieldset>
+
+            <fieldset class="fourthField">
+                <div>
+                    <h2>Education</h2>
+                </div>
+                <label for="Institution" class="Institution">Institution: <span>*</span></label>
+                <input type="text" id="InstitutionSchool">  <br>
+                <label for="HighestDegree" class="highestdegree">Highest Degree: <span>*</span></label>
+                <select id="HighestDegree" required>
+                    <option value="Select">Select</option>
+                    <option value="highschool">High School</option>
+                    <option value="university">University</option>
+                    <option value="master">Master's Degree</option>
+                    <option value="phd">PhD</option> <br>
+                </select> <br>
+                <label for="DegreeField" class="degreefield">Degree Field: <span>*</span></label>
+                <input type="text" id="DegreeField" required> <br>
+                <label for="YearOfCompletion" class="yearofcompletion">Year of Completion: <span>*</span></label>
+                <input type="text" id="YearOfCompletion" required> <br>
+            </fieldset>
+           
+            <fieldset id="lastField">
+                <div>
+                    <h2>Documents</h2>
+                </div>
+                <label for="Photo" class="photo">Photo: <span>*</span></label>
+                <input type="file" id="Photo" accept="image/jpeg, image/png" required> <br>
+                <label for="IDCopy" class="idcopy">ID Card: <span>*</span></label>
+                <input type="file" id="IDCopy" accept="application/pdf, application/docx" required> <br>
+                <label for="Transcript" class="transcript">Transcript: </label>
+                <input type="file" id="Transcript" accept="application/pdf" > <br>
+                <label for="matricResults" class="matricResults">Matric Results: <span>*</span></label>
+                <input type="file" name="matricResults" id="matricResults" required accept="application/pdf, application/docx">
+            </fieldset>
+            <div class="buttons">
+                <button type="submit" id="submitButton" onclick="applicationForm()">Submit</button>
+                <button type="reset" id="resetButton">Reset</button>
+            </div>
+            
+
+        </form>
     </main>
     <footer>
         <p>&copy; 2024 Belgium Campus. All rights reserved.</p>
