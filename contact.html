@@ -26,7 +26,7 @@
     </header>
     <main class="contactMain">
         <h2>Contact Us</h2>
-        <form action=/contact method="GET">
+        <form action=/contact method="GET" onsubmit="contactForm()">
             <fieldset>
                 <label for="EnquiryType">Enquiry Type: <span>*</span></label> <br>
                 <select name="" id="EnquiryType" required>
@@ -41,15 +41,15 @@
                 
 
                 <label for="FirstName">First Name: <span>*</span></label> <br>
-                <input type="text" required placeholder="Samantha"> <br>
+                <input type="text" id="FirstName" required placeholder="Samantha"> <br>
                 <label for="LastName">Last Name: <span>*</span></label> <br>
-                <input type="text" required placeholder="Maphake" class="lastName"> <br>
+                <input type="text" id="LastName" required placeholder="Maphake" class="lastName"> <br>
                 <label for="Email">Email: <span>*</span></label> <br>
-                <input type="email" required placeholder="samanthanthamanemaphake@gmail.com"> <br>
+                <input type="email" id="Email" required placeholder="samanthanthamanemaphake@gmail.com"> <br>
                 <label for="Phone">Phone: <span>*</span></label> <br>
-                <input type="text" required placeholder="(+27) 82 264 3345"> <br>
+                <input type="text" id="Phone" required placeholder="(+27) 82 264 3345"> <br>
                 <label for="Message">Message:</label> <br>
-                <textarea name="" id="" placeholder="Write a message"></textarea> <br>
+                <textarea name="" id="textarea" placeholder="Write a message"></textarea> <br>
                 <button class="buttonOne" type="submit">Submit</button>
             </fieldset>
         </form>
