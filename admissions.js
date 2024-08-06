@@ -1,3 +1,4 @@
+
   document.getElementById('applicationForm').addEventListener('submit', function(event) {
   event.preventDefault(); 
 
@@ -8,31 +9,31 @@
       'BCOM': new Date('2024-12-01T00:00:00')
   };
 
-  // Clear any existing countdowns
-  clearInterval(window.countdownInterval);
-  document.getElementById('timerDisplay').innerHTML = '';
+  clearInterval(window.countdowntime);
+  document.getElementById('courseCountdown').innerHTML = '';
 
   function updateCountdown() {
       const now = new Date();
-      document.getElementById('timerDisplay').innerHTML = '';
+      document.getElementById('courseCountdown').innerHTML = '';
 
       for (let course in courseStartDates) {
           const startDate = courseStartDates[course];
-          const timeLeft = startDate - now;
+          const time = startDate - now;
       
-          if (timeLeft > 0) {
-              const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-              const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-              const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-              const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+          if (time > 0) {
+              const days = Math.floor(time / (1000 * 60 * 60 * 24));
+              const hours = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              const minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
+              const seconds = Math.floor((time % (1000 * 60)) / 1000);
 
-              document.getElementById('timerDisplay').innerHTML += 
-                  `Time left for ${course} to start: ${days}d ${hours}h ${minutes}m ${seconds}s<br>`;
+              document.getElementById('courseCountdown').innerHTML += 
+                  
+                  alert(`${course}: ${days}d ${hours}h ${minutes}m ${seconds}s`);
           } else {
-              document.getElementById('timerDisplay').innerHTML += `${course} has already started!<br>`;
+              document.getElementById('courseCountdown').innerHTML += `${course} has already started!<br>`;
           }
       }
   }   
   updateCountdown();
-  window.countdownInterval = setInterval(updateCountdown, 1000);
+  window.countdowntime = setInterval(updateCountdown, 1000);
 });

@@ -24,6 +24,7 @@
             </ul>
         </nav>
     </header>
+    <div id="courseCountdown"></div>
     <main>
         <h2 class="heading">Belgium Campus Application Form</h2>
         <form id="applicationForm">
@@ -274,12 +275,12 @@
             </fieldset>
 
             <div class="buttons">
-                <button type="submit" id="submitButton">Submit</button>
+                <button type="submit" id="submitButton" onclick="applicationForm(event)">Submit</button>
                 <button type="reset" id="resetButton">Reset</button>
             </div>
         </form>
     </main>
-    <div id="timerDisplay"></div>
+
     <footer>
         <p>&copy; 2024 Belgium Campus. All rights reserved.</p>
     </footer>
