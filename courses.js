@@ -360,9 +360,11 @@ function updateCompletedList() {
     document.querySelectorAll('.enroll-btn').forEach(button => {
         button.addEventListener('click', function() {
             const courseId = this.getAttribute('data-course-id');
-            window.location.href = `enroll.html?courseId=${courseId}`;
+            window.location.href = `admissions.html?courseId=${courseId}`;
         });
     });
+
+    
 
 
 
