@@ -1,52 +1,38 @@
-/*// Get the form element
-const form = document.getElementById('myApplicationForm');
+  document.getElementById('applicationForm').addEventListener('submit', function(event) {
+  event.preventDefault(); 
 
-// Add an event listener to the form's submit event
-form.addEventListener('submit', (e) => {
-  // Prevent the default form submission behavior
-  e.preventDefault();
+  const courseStartDates = {
+      'HigherCertificate': new Date('2024-09-01T00:00:00'),
+      'DIT': new Date('2024-10-01T00:00:00'),
+      'BIT': new Date('2024-11-01T00:00:00'),
+      'BCOM': new Date('2024-12-01T00:00:00')
+  };
 
-  // Get the form data
-  const formData = new FormData(form);
+  // Clear any existing countdowns
+  clearInterval(window.countdownInterval);
+  document.getElementById('timerDisplay').innerHTML = '';
 
-  // Send the form data to the server using the fetch API
-  fetch('/submit-application', {
-    method: 'POST',
-    body: formData,
-  })
-  .then((response) => {
-    if (response.ok) {
-      return response.json();
-    } else {
-      throw new Error('Error submitting application');
-    }
-  })
-  .then((data) => {
-    // Display a success message
-    const successMessage = document.createElement('p');
-    successMessage.textContent = 'Application submitted successfully!';
-    successMessage.style.color = 'green';
-    document.body.appendChild(successMessage);
+  function updateCountdown() {
+      const now = new Date();
+      document.getElementById('timerDisplay').innerHTML = '';
 
-    // Clear the form fields
-    form.reset();
-  })
-  .catch((error) => {
-    // Display an error message
-    const errorMessage = document.createElement('p');
-    errorMessage.textContent = 'Error submitting application: ' + error.message;
-    errorMessage.style.color = 'red';
-    document.body.appendChild(errorMessage);
-  });
+      for (let course in courseStartDates) {
+          const startDate = courseStartDates[course];
+          const timeLeft = startDate - now;
+      
+          if (timeLeft > 0) {
+              const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+              const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+              const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+              document.getElementById('timerDisplay').innerHTML += 
+                  `Time left for ${course} to start: ${days}d ${hours}h ${minutes}m ${seconds}s<br>`;
+          } else {
+              document.getElementById('timerDisplay').innerHTML += `${course} has already started!<br>`;
+          }
+      }
+  }   
+  updateCountdown();
+  window.countdownInterval = setInterval(updateCountdown, 1000);
 });
-*/
-
-function applicationForm(){
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const phone = document.getElementById('phone').value;
-    const nationality = document.getElementById('nationality').value;
-    const country = document.getElementById('country').value;
-    const idCopy = document.getElementById('idCopy').value;
-    const transcript = document.getElementById('transcript').value;
-}
