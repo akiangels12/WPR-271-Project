@@ -206,16 +206,16 @@ const courseData = {
         duration: "1 year",
         description: "This is a higher certificate course.",
         modules: [
-            { name: "Introduction to Economics", lecturer: "Dr. Smith", venue: "Room 101", studyGuide: "link_to_study_guide_1", video: "https://youtube.com/random_video_1" },
-            { name: "Principles of Marketing", lecturer: "Ms. Johnson", venue: "Room 102", studyGuide: "link_to_study_guide_2", video: "https://youtube.com/random_video_2" },
-            { name: "Advanced Calculus", lecturer: "Dr. Williams", venue: "Room 103", studyGuide: "link_to_study_guide_3", video: "https://youtube.com/random_video_3" },
-            { name: "Introduction to Psychology", lecturer: "Mr. Brown", venue: "Room 104", studyGuide: "link_to_study_guide_4", video: "https://youtube.com/random_video_4" },
-            { name: "Fundamentals of Finance", lecturer: "Dr. Lee", venue: "Room 105", studyGuide: "link_to_study_guide_5", video: "https://youtube.com/random_video_5" },
-            { name: "Human Resource Management", lecturer: "Ms. Davis", venue: "Room 106", studyGuide: "link_to_study_guide_6", video: "https://youtube.com/random_video_6" },
-            { name: "Introduction to Computer Science", lecturer: "Dr. Wilson", venue: "Room 107", studyGuide: "link_to_study_guide_7", video: "https://youtube.com/random_video_7" },
-            { name: "Business Law", lecturer: "Mr. Miller", venue: "Room 108", studyGuide: "link_to_study_guide_8", video: "https://youtube.com/random_video_8" },
-            { name: "Environmental Science", lecturer: "Dr. Moore", venue: "Room 109", studyGuide: "link_to_study_guide_9", video: "https://youtube.com/random_video_9" },
-            { name: "Introduction to Philosophy", lecturer: "Ms. Taylor", venue: "Room 110", studyGuide: "link_to_study_guide_10", video: "https://youtube.com/random_video_10" }
+            { name: "Introduction to Economics", lecturer: "Dr. Smith", venue: "Room 101", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Principles of Marketing", lecturer: "Ms. Johnson", venue: "Room 102", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Advanced Calculus", lecturer: "Dr. Williams", venue: "Room 103", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Introduction to Psychology", lecturer: "Mr. Brown", venue: "Room 104", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Fundamentals of Finance", lecturer: "Dr. Lee", venue: "Room 105", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Human Resource Management", lecturer: "Ms. Davis", venue: "Room 106", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Introduction to Computer Science", lecturer: "Dr. Wilson", venue: "Room 107", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Business Law", lecturer: "Mr. Miller", venue: "Room 108", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Environmental Science", lecturer: "Dr. Moore", venue: "Room 109", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Introduction to Philosophy", lecturer: "Ms. Taylor", venue: "Room 110", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" }
         ]
         
     },
@@ -225,18 +225,19 @@ const courseData = {
         duration: "2 years",
         description: "This is a diploma courseThis empowering diploma features on-trend specialisations aligned with real-world industry requirements. These specialisations will give you access to many exciting career opportunities and allow you to graduate in high demand.",
         modules: [
-            { name: "Introduction to Programming", lecturer: "Prof. Brown", venue: "Room 201", studyGuide: "link_to_study_guide_A", video: "https://youtube.com/random_video_A" },
-            { name: "Network Security", lecturer: "Dr. Adams", venue: "Room 301", studyGuide: "https://example.com/study-guide-bit1", video: "https://youtube.com/random_video_X" },
-            { name: "Software Engineering", lecturer: "Ms. Green", venue: "Room 302", studyGuide: "https://example.com/study-guide-bit2", video: "https://youtube.com/random_video_Y" },
-            { name: "Database Systems", lecturer: "Dr. Miller", venue: "Room 303", studyGuide: "https://example.com/study-guide-bit3", video: "https://youtube.com/random_video_Z" },
-            { name: "Web Development", lecturer: "Ms. Johnson", venue: "Room 304", studyGuide: "https://example.com/study-guide-bit4", video: "https://youtube.com/random_video_A" },
-            { name: "Artificial Intelligence", lecturer: "Dr. Lee", venue: "Room 305", studyGuide: "https://example.com/study-guide-bit5", video: "https://youtube.com/random_video_B" },
-            { name: "Machine Learning", lecturer: "Ms. Davis", venue: "Room 306", studyGuide: "https://example.com/study-guide-bit6", video: "https://youtube.com/random_video_C" },
-            { name: "Cyber Forensics", lecturer: "Dr. Wilson", venue: "Room 307", studyGuide: "https://example.com/study-guide-bit7", video: "https://youtube.com/random_video_D" },
-            { name: "Cloud Computing", lecturer: "Ms. Clark", venue: "Room 308", studyGuide: "https://example.com/study-guide-bit8", video: "https://youtube.com/random_video_E" },
-            { name: "Data Science", lecturer: "Dr. Roberts", venue: "Room 309", studyGuide: "https://example.com/study-guide-bit9", video: "https://youtube.com/random_video_F" },
-            { name: "Internet of Things", lecturer: "Ms. Taylor", venue: "Room 310", studyGuide: "https://example.com/study-guide-bit10", video: "https://youtube.com/random_video_G" }
+            { name: "Introduction to Programming", lecturer: "Prof. Brown", venue: "Room 201", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Network Security", lecturer: "Dr. Adams", venue: "Room 301", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Software Engineering", lecturer: "Ms. Green", venue: "Room 302", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Database Systems", lecturer: "Dr. Miller", venue: "Room 303", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Web Development", lecturer: "Ms. Johnson", venue: "Room 304", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Artificial Intelligence", lecturer: "Dr. Lee", venue: "Room 305", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Machine Learning", lecturer: "Ms. Davis", venue: "Room 306", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Cyber Forensics", lecturer: "Dr. Wilson", venue: "Room 307", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Cloud Computing", lecturer: "Ms. Clark", venue: "Room 308", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Data Science", lecturer: "Dr. Roberts", venue: "Room 309", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Internet of Things", lecturer: "Ms. Taylor", venue: "Room 310", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" }
         ]
+        
         
     },
   
@@ -246,17 +247,18 @@ const courseData = {
         duration: "4 years",
         description: "Our Bachelor of Computing degree will teach you the essential computing skills of troubleshooting and formulating viable solutions. Additionally, you will learn to apply theories and integrate them in real-world environments, across multiple disciplines, by presenting best practices and solutions.",
         modules: [
-            { name: "Financial Accounting", lecturer: "Mr. Harris", venue: "Room 401", studyGuide: "https://example.com/study-guide-bcom1", video: "https://youtube.com/random_video_M" },
-            { name: "Marketing Management", lecturer: "Ms. Clark", venue: "Room 402", studyGuide: "https://example.com/study-guide-bcom2", video: "https://youtube.com/random_video_N" },
-            { name: "Business Law", lecturer: "Dr. Adams", venue: "Room 403", studyGuide: "https://example.com/study-guide-bcom3", video: "https://youtube.com/random_video_O" },
-            { name: "Corporate Finance", lecturer: "Ms. Turner", venue: "Room 404", studyGuide: "https://example.com/study-guide-bcom4", video: "https://youtube.com/random_video_P" },
-            { name: "Human Resource Management", lecturer: "Mr. White", venue: "Room 405", studyGuide: "https://example.com/study-guide-bcom5", video: "https://youtube.com/random_video_Q" },
-            { name: "Operations Management", lecturer: "Dr. Young", venue: "Room 406", studyGuide: "https://example.com/study-guide-bcom6", video: "https://youtube.com/random_video_R" },
-            { name: "International Business", lecturer: "Ms. Green", venue: "Room 407", studyGuide: "https://example.com/study-guide-bcom7", video: "https://youtube.com/random_video_S" },
-            { name: "Strategic Management", lecturer: "Mr. Brown", venue: "Room 408", studyGuide: "https://example.com/study-guide-bcom8", video: "https://youtube.com/random_video_T" },
-            { name: "E-commerce", lecturer: "Dr. King", venue: "Room 409", studyGuide: "https://example.com/study-guide-bcom9", video: "https://youtube.com/random_video_U" },
-            { name: "Project Management", lecturer: "Ms. Lee", venue: "Room 410", studyGuide: "https://example.com/study-guide-bcom10", video: "https://youtube.com/random_video_V" }
+            { name: "Financial Accounting", lecturer: "Mr. Harris", venue: "Room 401", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Marketing Management", lecturer: "Ms. Clark", venue: "Room 402", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Business Law", lecturer: "Dr. Adams", venue: "Room 403", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Corporate Finance", lecturer: "Ms. Turner", venue: "Room 404", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Human Resource Management", lecturer: "Mr. White", venue: "Room 405", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Operations Management", lecturer: "Dr. Young", venue: "Room 406", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "International Business", lecturer: "Ms. Green", venue: "Room 407", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Strategic Management", lecturer: "Mr. Brown", venue: "Room 408", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "E-commerce", lecturer: "Dr. King", venue: "Room 409", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Project Management", lecturer: "Ms. Lee", venue: "Room 410", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" }
         ]
+        
         
     },
     "backgroundBIT": {
@@ -265,17 +267,18 @@ const courseData = {
         duration: "3 years",
         description: "A bachelor’s degree remains the entry standard in many professional careers. Its long-term benefits make it well worth the initial investment as it allows you professional entry into some of the top names in IT. It will also give you the knowledge and skills to create your own enterprise within the sector. Overall, an IT degree is a worthwhile investment in your future.",
         modules: [
-            { name: "Network Security", lecturer: "Dr. Adams", venue: "Room 301", studyGuide: "https://example.com/study-guide-bit1", video: "https://youtube.com/random_video_X" },
-            { name: "Software Engineering", lecturer: "Ms. Green", venue: "Room 302", studyGuide: "https://example.com/study-guide-bit2", video: "https://youtube.com/random_video_Y" },
-            { name: "Database Systems", lecturer: "Dr. Miller", venue: "Room 303", studyGuide: "https://example.com/study-guide-bit3", video: "https://youtube.com/random_video_Z" },
-            { name: "Web Development", lecturer: "Ms. Johnson", venue: "Room 304", studyGuide: "https://example.com/study-guide-bit4", video: "https://youtube.com/random_video_A" },
-            { name: "Artificial Intelligence", lecturer: "Dr. Lee", venue: "Room 305", studyGuide: "https://example.com/study-guide-bit5", video: "https://youtube.com/random_video_B" },
-            { name: "Machine Learning", lecturer: "Ms. Davis", venue: "Room 306", studyGuide: "https://example.com/study-guide-bit6", video: "https://youtube.com/random_video_C" },
-            { name: "Cyber Forensics", lecturer: "Dr. Wilson", venue: "Room 307", studyGuide: "https://example.com/study-guide-bit7", video: "https://youtube.com/random_video_D" },
-            { name: "Cloud Computing", lecturer: "Ms. Clark", venue: "Room 308", studyGuide: "https://example.com/study-guide-bit8", video: "https://youtube.com/random_video_E" },
-            { name: "Data Science", lecturer: "Dr. Roberts", venue: "Room 309", studyGuide: "https://example.com/study-guide-bit9", video: "https://youtube.com/random_video_F" },
-            { name: "Internet of Things", lecturer: "Ms. Taylor", venue: "Room 310", studyGuide: "https://example.com/study-guide-bit10", video: "https://youtube.com/random_video_G" }
+            { name: "Network Security", lecturer: "Dr. Adams", venue: "Room 301", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Software Engineering", lecturer: "Ms. Green", venue: "Room 302", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Database Systems", lecturer: "Dr. Miller", venue: "Room 303", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Web Development", lecturer: "Ms. Johnson", venue: "Room 304", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Artificial Intelligence", lecturer: "Dr. Lee", venue: "Room 305", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Machine Learning", lecturer: "Ms. Davis", venue: "Room 306", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Cyber Forensics", lecturer: "Dr. Wilson", venue: "Room 307", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Cloud Computing", lecturer: "Ms. Clark", venue: "Room 308", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Data Science", lecturer: "Dr. Roberts", venue: "Room 309", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Internet of Things", lecturer: "Ms. Taylor", venue: "Room 310", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" }
         ]
+        
         
     },
 };const completedModules = new Set();
@@ -294,16 +297,46 @@ document.querySelectorAll('.course-title').forEach(header => {
             
             const tableBody = document.getElementById('courseTableBody');
             tableBody.innerHTML = '';
+
             course.modules.forEach((module, index) => {
                 const row = document.createElement('tr');
-                row.innerHTML = `
-                    <td>${module.name}</td>
-                    <td>${module.lecturer}</td>
-                    <td>${module.venue}</td>
-                    <td><a href="${module.studyGuide}" download>Download Study Guide</a></td>
-                    <td><a href="${module.video}" target="_blank">Watch Video</a></td>
-                    <td><button class="complete-btn" data-index="${index}">Mark as Completed</button></td>
-                `;
+
+                const nameCell = document.createElement('td');
+                nameCell.innerText = module.name;
+                row.appendChild(nameCell);
+
+                const lecturerCell = document.createElement('td');
+                lecturerCell.innerText = module.lecturer;
+                row.appendChild(lecturerCell);
+
+                const venueCell = document.createElement('td');
+                venueCell.innerText = module.venue;
+                row.appendChild(venueCell);
+
+                const studyGuideCell = document.createElement('td');
+                const studyGuideLink = document.createElement('a');
+                studyGuideLink.href = module.studyGuide;
+                studyGuideLink.download = '';
+                studyGuideLink.innerText = 'Download Study Guide';
+                studyGuideCell.appendChild(studyGuideLink);
+                row.appendChild(studyGuideCell);
+
+                const videoCell = document.createElement('td');
+                const videoLink = document.createElement('a');
+                videoLink.href = module.video;
+                videoLink.target = '_blank';
+                videoLink.innerText = 'Watch Video';
+                videoCell.appendChild(videoLink);
+                row.appendChild(videoCell);
+
+                const completeCell = document.createElement('td');
+                const completeButton = document.createElement('button');
+                completeButton.className = 'complete-btn';
+                completeButton.setAttribute('data-index', index);
+                completeButton.innerText = 'Mark as Completed';
+                completeCell.appendChild(completeButton);
+                row.appendChild(completeCell);
+
                 tableBody.appendChild(row);
             });
 
@@ -333,6 +366,7 @@ document.querySelectorAll('.course-title').forEach(header => {
         }
     });
 });
+
 
 
 function updateCompletedList() {
