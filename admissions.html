@@ -6,7 +6,6 @@
     <title>Belgium Campus - Admissions</title>
     <link rel="stylesheet" href="admissions.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="admissions.js"></script>
 </head>
 <body>
     <header>
@@ -25,15 +24,16 @@
             </ul>
         </nav>
     </header>
+    <div id="courseCountdown"></div>
     <main>
         <h2 class="heading">Belgium Campus Application Form</h2>
-        <form action="" id="myApplicationForm" >
+        <form id="applicationForm">
             <fieldset class="firstField">
                 <div>
                     <h2>Personal Information</h2>
                 </div>
                 <label for="Title" class="title">Title: <span>*</span></label>
-                <select name="" id=""  class="studentTitle">
+                <select name="" id="selectTitle"  class="studentTitle">
                     <option value="">Select</option>
                     <option value="Miss">Miss</option>
                     <option value="Mr">Mr.</option>
@@ -152,7 +152,6 @@
                     <option value="Yemeni">Yemeni</option>
                     <option value="Zambian">Zambian</option>
                     <option value="Other">Other</option>
-
                 </select> <br>
                 <label for="DateOfBirth" class="dateofbirth">Date of Birth: <span>*</span></label>
                 <input type="date" name="" id="dateOfBirth"> <br>
@@ -163,11 +162,8 @@
                  <label for="female" id="femaleLabel">Female</label>
                  <input type="radio" id="female" name="gender" value="female">
                  <label for="other" id="otherLabel">Other</label> 
-                 <input type="radio" id="other" name="gender" value="other">
-                
-
-                 <br>
-                <label for="Indicate if you have disability" class="disability">Please state if you have disability</label>
+                 <input type="radio" id="other" name="gender" value="other"> <br>
+                 <label for="Indicate if you have disability" class="disability">Please state if you have disability</label>
                 <select name="" id="disability">
                     <option value="Select">Select</option>
                     <option value="Multiple">Multiple</option>
@@ -177,7 +173,7 @@
                     <option value="None">None</option>
                 </select>
             </fieldset>
-
+                
             <fieldset class="secondField">
                 <div>
                     <h2>Qualification</h2>
@@ -198,13 +194,7 @@
                     <option value="Polokwane">Polokwane</option>
                     <option value="Randburg">Randburg</option>
                 </select> <br>
-                <label for="InTakeYear" class="year">In Take Year: <span>*</span></label> 
-                <select name="" id="selectInTakeYear">
-                    <option value="">Select</option>
-                    <option value="2024-September">2024-September</option>
-                    <option value="2025-February">2025-February</option>
-                    <option value="2025-May">2025-May</option>
-                </select> <br>
+                
                 <label for="DeliveryMode" class="mode">Delivery Mode: <span>*</span></label>
                 <select name="" id="selectMode">
                     <option value="">Select</option>
@@ -212,7 +202,7 @@
                     <option value="face-to-face">Face-to-Face</option>
                 </select>
             </fieldset>
-            
+
             <fieldset class="thirdField">
                 <div>
                     <h2>Parent / Guardian Details</h2>
@@ -249,6 +239,7 @@
                 </select> <br>
             </fieldset>
 
+            
             <fieldset class="fourthField">
                 <div>
                     <h2>Education</h2>
@@ -268,7 +259,7 @@
                 <label for="YearOfCompletion" class="yearofcompletion">Year of Completion: <span>*</span></label>
                 <input type="text" id="YearOfCompletion" required> <br>
             </fieldset>
-           
+
             <fieldset id="lastField">
                 <div>
                     <h2>Documents</h2>
@@ -282,17 +273,17 @@
                 <label for="matricResults" class="matricResults">Matric Results: <span>*</span></label>
                 <input type="file" name="matricResults" id="matricResults" required accept="application/pdf, application/docx">
             </fieldset>
+
             <div class="buttons">
-                <button type="submit" id="submitButton" onclick="applicationForm()">Submit</button>
+                <button type="submit" id="submitButton" onclick="applicationForm(event)">Submit</button>
                 <button type="reset" id="resetButton">Reset</button>
             </div>
-            
-
         </form>
     </main>
+
     <footer>
         <p>&copy; 2024 Belgium Campus. All rights reserved.</p>
     </footer>
-    <script src="scripts.js"></script>
+    <script src="admissions.js"></script>
 </body>
 </html>
