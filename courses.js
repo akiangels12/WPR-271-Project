@@ -175,16 +175,18 @@ document.getElementById('search-button').addEventListener('click', function() {
             courseList.appendChild(courseItem);
         }
     }
+    
 
     // Show or hide the course details section and print button based on search results
     const courseDetailsSection = document.getElementById('course-details-section');
-    if (found) {
-        courseDetailsSection.classList.remove('hidden');
-        displayCourseDetails(foundCourseId);
-    } else {
-        courseDetailsSection.classList.add('hidden');
-        
-    }
+if (found) {
+    console.log('Course found. Removing hidden class.');
+    courseDetailsSection.classList.remove('hidden');
+    displayCourseDetails(foundCourseId);
+} else {
+    console.log('Course not found. Adding hidden class.');
+    courseDetailsSection.classList.add('hidden');
+}
 });
 
 function displayCourseDetails(code) {

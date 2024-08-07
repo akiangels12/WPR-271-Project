@@ -478,5 +478,17 @@ h2, p {
     margin-bottom: 20px;
 
 }
+.searchEnroll {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+            
+}
+.enroll-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.1); /* Slightly enlarge the button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a shadow */
+}
+
 
 
