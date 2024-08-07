@@ -188,7 +188,7 @@ footer {
 #course-details h1,
 #course-details h2,
 #course-details h3 {
-    color: #f3f3f3; 
+    color: #ffffff; 
     margin-top: 0; 
     margin-bottom: 15px; 
 }
@@ -218,19 +218,320 @@ footer {
 }
 
 
-
+@keyframes waveLight {
+    0.00% { background: radial-gradient(circle at 0.00% 50%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    0.33% { background: radial-gradient(circle at 0.33% 50.05235604970839%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    0.67% { background: radial-gradient(circle at 0.67% 50.104689134322996%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    1.00% { background: radial-gradient(circle at 1.00% 50.15697629882328%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    1.33% { background: radial-gradient(circle at 1.33% 50.20919460833079%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    1.67% { background: radial-gradient(circle at 1.67% 50.26132115816913%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    2.00% { background: radial-gradient(circle at 2.00% 50.31333308391076%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    2.33% { background: radial-gradient(circle at 2.33% 50.36520757140603%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    2.67% { background: radial-gradient(circle at 2.67% 50.416921866790254%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    3.00% { background: radial-gradient(circle at 3.00% 50.46845328646431%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    3.33% { background: radial-gradient(circle at 3.33% 50.519779227044395%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    3.67% { background: radial-gradient(circle at 3.67% 50.57087717527664%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    4.00% { background: radial-gradient(circle at 4.00% 50.62172471791214%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    4.33% { background: radial-gradient(circle at 4.33% 50.67229955153817%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    4.67% { background: radial-gradient(circle at 4.67% 50.72257949236118%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    5.00% { background: radial-gradient(circle at 5.00% 50.77254248593737%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    5.33% { background: radial-gradient(circle at 5.33% 50.82216661684646%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    5.67% { background: radial-gradient(circle at 5.67% 50.87143011830454%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    6.00% { background: radial-gradient(circle at 6.00% 50.92031138171169%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    6.33% { background: radial-gradient(circle at 6.33% 50.968788966130255%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    6.67% { background: radial-gradient(circle at 6.67% 51.0168416076895%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    7.00% { background: radial-gradient(circle at 7.00% 51.06444822891268%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    7.33% { background: radial-gradient(circle at 7.33% 51.11158794796232%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    7.67% { background: radial-gradient(circle at 7.67% 51.158240087799655%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    8.00% { background: radial-gradient(circle at 8.00% 51.20438418525429%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    8.33% { background: radial-gradient(circle at 8.33% 51.25%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    8.67% { background: radial-gradient(circle at 8.67% 51.29506752343283%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    9.00% { background: radial-gradient(circle at 9.00% 51.33956698744749%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    9.33% { background: radial-gradient(circle at 9.33% 51.38347887310836%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    9.67% { background: radial-gradient(circle at 9.67% 51.426783919211076%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    10.00% { background: radial-gradient(circle at 10.00% 51.469463130731185%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    10.33% { background: radial-gradient(circle at 10.33% 51.51149778715594%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    10.67% { background: radial-gradient(circle at 10.67% 51.55286945069577%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    11.00% { background: radial-gradient(circle at 11.00% 51.59355997437172%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    11.33% { background: radial-gradient(circle at 11.33% 51.63355150997526%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    11.67% { background: radial-gradient(circle at 11.67% 51.67282651589714%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    12.00% { background: radial-gradient(circle at 12.00% 51.71136776482172%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    12.33% { background: radial-gradient(circle at 12.33% 51.74915835128341%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    12.67% { background: radial-gradient(circle at 12.67% 51.78618169908201%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    13.00% { background: radial-gradient(circle at 13.00% 51.82242156855353%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    13.33% { background: radial-gradient(circle at 13.33% 51.85786206369349%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    13.67% { background: radial-gradient(circle at 13.67% 51.89248763912939%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    14.00% { background: radial-gradient(circle at 14.00% 51.92628310693947%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    14.33% { background: radial-gradient(circle at 14.33% 51.9592336433146%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    14.67% { background: radial-gradient(circle at 14.67% 51.99132479506049%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    15.00% { background: radial-gradient(circle at 15.00% 52.02254248593737%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    15.33% { background: radial-gradient(circle at 15.33% 52.05287302283426%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    15.67% { background: radial-gradient(circle at 15.67% 52.082303101775246%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    16.00% { background: radial-gradient(circle at 16.00% 52.110819813755036%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    16.33% { background: radial-gradient(circle at 16.33% 52.13841065040127%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    16.67% { background: radial-gradient(circle at 16.67% 52.1650635094611%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    17.00% { background: radial-gradient(circle at 17.00% 52.19076670010966%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    17.33% { background: radial-gradient(circle at 17.33% 52.21550894807804%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    17.67% { background: radial-gradient(circle at 17.67% 52.239279400598534%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    18.00% { background: radial-gradient(circle at 18.00% 52.26206763116505%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    18.33% { background: radial-gradient(circle at 18.33% 52.2838636441065%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    18.67% { background: radial-gradient(circle at 18.67% 52.30465787897125%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    19.00% { background: radial-gradient(circle at 19.00% 52.32444121472063%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    19.33% { background: radial-gradient(circle at 19.33% 52.343204973729726%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    19.67% { background: radial-gradient(circle at 19.67% 52.3609409255937%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    20.00% { background: radial-gradient(circle at 20.00% 52.377641290737884%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    20.33% { background: radial-gradient(circle at 20.33% 52.393298743830165%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    20.67% { background: radial-gradient(circle at 20.67% 52.407906416994145%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    21.00% { background: radial-gradient(circle at 21.00% 52.42145790282158%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    21.33% { background: radial-gradient(circle at 21.33% 52.4339472571829%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    21.67% { background: radial-gradient(circle at 21.67% 52.445369001834514%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    22.00% { background: radial-gradient(circle at 22.00% 52.45571812682172%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    22.33% { background: radial-gradient(circle at 22.33% 52.46499009267626%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    22.67% { background: radial-gradient(circle at 22.67% 52.47318083240747%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    23.00% { background: radial-gradient(circle at 23.00% 52.480286753286194%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    23.33% { background: radial-gradient(circle at 23.33% 52.486304738420685%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    23.67% { background: radial-gradient(circle at 23.67% 52.491232148123764%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    24.00% { background: radial-gradient(circle at 24.00% 52.49506682107068%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    24.33% { background: radial-gradient(circle at 24.33% 52.497807075247145%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    24.67% { background: radial-gradient(circle at 24.67% 52.49945170868711%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    25.00% { background: radial-gradient(circle at 25.00% 52.5%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    25.33% { background: radial-gradient(circle at 25.33% 52.49945170868711%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    25.67% { background: radial-gradient(circle at 25.67% 52.497807075247145%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    26.00% { background: radial-gradient(circle at 26.00% 52.49506682107068%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    26.33% { background: radial-gradient(circle at 26.33% 52.491232148123764%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    26.67% { background: radial-gradient(circle at 26.67% 52.486304738420685%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    27.00% { background: radial-gradient(circle at 27.00% 52.480286753286194%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    27.33% { background: radial-gradient(circle at 27.33% 52.47318083240747%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    27.67% { background: radial-gradient(circle at 27.67% 52.46499009267626%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    28.00% { background: radial-gradient(circle at 28.00% 52.45571812682172%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    28.33% { background: radial-gradient(circle at 28.33% 52.445369001834514%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    28.67% { background: radial-gradient(circle at 28.67% 52.4339472571829%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    29.00% { background: radial-gradient(circle at 29.00% 52.42145790282158%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    29.33% { background: radial-gradient(circle at 29.33% 52.407906416994145%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    29.67% { background: radial-gradient(circle at 29.67% 52.393298743830165%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    30.00% { background: radial-gradient(circle at 30.00% 52.377641290737884%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    30.33% { background: radial-gradient(circle at 30.33% 52.3609409255937%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    30.67% { background: radial-gradient(circle at 30.67% 52.343204973729726%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    31.00% { background: radial-gradient(circle at 31.00% 52.32444121472063%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    31.33% { background: radial-gradient(circle at 31.33% 52.30465787897125%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    31.67% { background: radial-gradient(circle at 31.67% 52.2838636441065%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    32.00% { background: radial-gradient(circle at 32.00% 52.262067631165046%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    32.33% { background: radial-gradient(circle at 32.33% 52.239279400598534%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    32.67% { background: radial-gradient(circle at 32.67% 52.21550894807804%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    33.00% { background: radial-gradient(circle at 33.00% 52.190766700109656%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    33.33% { background: radial-gradient(circle at 33.33% 52.1650635094611%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    33.67% { background: radial-gradient(circle at 33.67% 52.13841065040127%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    34.00% { background: radial-gradient(circle at 34.00% 52.110819813755036%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    34.33% { background: radial-gradient(circle at 34.33% 52.082303101775246%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    34.67% { background: radial-gradient(circle at 34.67% 52.05287302283426%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    35.00% { background: radial-gradient(circle at 35.00% 52.02254248593737%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    35.33% { background: radial-gradient(circle at 35.33% 51.99132479506049%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    35.67% { background: radial-gradient(circle at 35.67% 51.9592336433146%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    36.00% { background: radial-gradient(circle at 36.00% 51.92628310693947%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    36.33% { background: radial-gradient(circle at 36.33% 51.89248763912939%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    36.67% { background: radial-gradient(circle at 36.67% 51.85786206369349%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    37.00% { background: radial-gradient(circle at 37.00% 51.82242156855353%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    37.33% { background: radial-gradient(circle at 37.33% 51.78618169908201%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    37.67% { background: radial-gradient(circle at 37.67% 51.74915835128341%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    38.00% { background: radial-gradient(circle at 38.00% 51.71136776482172%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    38.33% { background: radial-gradient(circle at 38.33% 51.67282651589714%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    38.67% { background: radial-gradient(circle at 38.67% 51.63355150997526%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    39.00% { background: radial-gradient(circle at 39.00% 51.59355997437172%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    39.33% { background: radial-gradient(circle at 39.33% 51.55286945069577%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    39.67% { background: radial-gradient(circle at 39.67% 51.51149778715594%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    40.00% { background: radial-gradient(circle at 40.00% 51.469463130731185%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    40.33% { background: radial-gradient(circle at 40.33% 51.426783919211076%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    40.67% { background: radial-gradient(circle at 40.67% 51.38347887310836%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    41.00% { background: radial-gradient(circle at 41.00% 51.33956698744749%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    41.33% { background: radial-gradient(circle at 41.33% 51.29506752343283%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    41.67% { background: radial-gradient(circle at 41.67% 51.25%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    42.00% { background: radial-gradient(circle at 42.00% 51.20438418525429%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    42.33% { background: radial-gradient(circle at 42.33% 51.158240087799655%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    42.67% { background: radial-gradient(circle at 42.67% 51.11158794796232%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    43.00% { background: radial-gradient(circle at 43.00% 51.06444822891268%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    43.33% { background: radial-gradient(circle at 43.33% 51.0168416076895%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    43.67% { background: radial-gradient(circle at 43.67% 50.968788966130255%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    44.00% { background: radial-gradient(circle at 44.00% 50.9203113817117%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    44.33% { background: radial-gradient(circle at 44.33% 50.87143011830454%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    44.67% { background: radial-gradient(circle at 44.67% 50.82216661684646%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    45.00% { background: radial-gradient(circle at 45.00% 50.77254248593737%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    45.33% { background: radial-gradient(circle at 45.33% 50.72257949236118%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    45.67% { background: radial-gradient(circle at 45.67% 50.67229955153817%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    46.00% { background: radial-gradient(circle at 46.00% 50.62172471791214%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    46.33% { background: radial-gradient(circle at 46.33% 50.57087717527664%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    46.67% { background: radial-gradient(circle at 46.67% 50.519779227044395%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    47.00% { background: radial-gradient(circle at 47.00% 50.46845328646431%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    47.33% { background: radial-gradient(circle at 47.33% 50.416921866790254%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    47.67% { background: radial-gradient(circle at 47.67% 50.36520757140603%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    48.00% { background: radial-gradient(circle at 48.00% 50.31333308391076%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    48.33% { background: radial-gradient(circle at 48.33% 50.26132115816913%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    48.67% { background: radial-gradient(circle at 48.67% 50.20919460833079%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    49.00% { background: radial-gradient(circle at 49.00% 50.15697629882328%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    49.33% { background: radial-gradient(circle at 49.33% 50.104689134323%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    49.67% { background: radial-gradient(circle at 49.67% 50.05235604970839%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    50.00% { background: radial-gradient(circle at 50.00% 50%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    50.33% { background: radial-gradient(circle at 50.33% 49.94764395029161%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    50.67% { background: radial-gradient(circle at 50.67% 49.895310865677004%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    51.00% { background: radial-gradient(circle at 51.00% 49.84302370117672%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    51.33% { background: radial-gradient(circle at 51.33% 49.79080539166921%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    51.67% { background: radial-gradient(circle at 51.67% 49.73867884183087%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    52.00% { background: radial-gradient(circle at 52.00% 49.68666691608924%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    52.33% { background: radial-gradient(circle at 52.33% 49.63479242859397%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    52.67% { background: radial-gradient(circle at 52.67% 49.583078133209746%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    53.00% { background: radial-gradient(circle at 53.00% 49.53154671353569%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    53.33% { background: radial-gradient(circle at 53.33% 49.480220772955605%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    53.67% { background: radial-gradient(circle at 53.67% 49.429122824723365%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    54.00% { background: radial-gradient(circle at 54.00% 49.37827528208786%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    54.33% { background: radial-gradient(circle at 54.33% 49.32770044846183%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    54.67% { background: radial-gradient(circle at 54.67% 49.27742050763882%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    55.00% { background: radial-gradient(circle at 55.00% 49.22745751406263%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    55.33% { background: radial-gradient(circle at 55.33% 49.17783338315354%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    55.67% { background: radial-gradient(circle at 55.67% 49.12856988169546%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    56.00% { background: radial-gradient(circle at 56.00% 49.0796886182883%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    56.33% { background: radial-gradient(circle at 56.33% 49.031211033869745%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    56.67% { background: radial-gradient(circle at 56.67% 48.9831583923105%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    57.00% { background: radial-gradient(circle at 57.00% 48.93555177108732%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    57.33% { background: radial-gradient(circle at 57.33% 48.88841205203768%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    57.67% { background: radial-gradient(circle at 57.67% 48.841759912200345%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    58.00% { background: radial-gradient(circle at 58.00% 48.795615814745716%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    58.33% { background: radial-gradient(circle at 58.33% 48.75%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    58.67% { background: radial-gradient(circle at 58.67% 48.70493247656717%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    59.00% { background: radial-gradient(circle at 59.00% 48.66043301255251%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    59.33% { background: radial-gradient(circle at 59.33% 48.61652112689164%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    59.67% { background: radial-gradient(circle at 59.67% 48.573216080788924%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    60.00% { background: radial-gradient(circle at 60.00% 48.530536869268815%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    60.33% { background: radial-gradient(circle at 60.33% 48.48850221284406%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    60.67% { background: radial-gradient(circle at 60.67% 48.44713054930423%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    61.00% { background: radial-gradient(circle at 61.00% 48.40644002562828%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    61.33% { background: radial-gradient(circle at 61.33% 48.36644849002474%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    61.67% { background: radial-gradient(circle at 61.67% 48.32717348410286%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    62.00% { background: radial-gradient(circle at 62.00% 48.28863223517828%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    62.33% { background: radial-gradient(circle at 62.33% 48.25084164871659%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    62.67% { background: radial-gradient(circle at 62.67% 48.21381830091799%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    63.00% { background: radial-gradient(circle at 63.00% 48.17757843144647%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    63.33% { background: radial-gradient(circle at 63.33% 48.14213793630651%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    63.67% { background: radial-gradient(circle at 63.67% 48.10751236087061%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    64.00% { background: radial-gradient(circle at 64.00% 48.07371689306053%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    64.33% { background: radial-gradient(circle at 64.33% 48.0407663566854%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    64.67% { background: radial-gradient(circle at 64.67% 48.00867520493951%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    65.00% { background: radial-gradient(circle at 65.00% 47.977457514062635%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    65.33% { background: radial-gradient(circle at 65.33% 47.94712697716574%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    65.67% { background: radial-gradient(circle at 65.67% 47.917696898224754%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    66.00% { background: radial-gradient(circle at 66.00% 47.889180186244964%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    66.33% { background: radial-gradient(circle at 66.33% 47.86158934959873%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    66.67% { background: radial-gradient(circle at 66.67% 47.8349364905389%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    67.00% { background: radial-gradient(circle at 67.00% 47.80923329989034%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    67.33% { background: radial-gradient(circle at 67.33% 47.78449105192196%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    67.67% { background: radial-gradient(circle at 67.67% 47.760720599401466%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    68.00% { background: radial-gradient(circle at 68.00% 47.73793236883495%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    68.33% { background: radial-gradient(circle at 68.33% 47.7161363558935%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    68.67% { background: radial-gradient(circle at 68.67% 47.69534212102875%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    69.00% { background: radial-gradient(circle at 69.00% 47.67555878527937%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    69.33% { background: radial-gradient(circle at 69.33% 47.656795026270274%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    69.67% { background: radial-gradient(circle at 69.67% 47.6390590744063%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    70.00% { background: radial-gradient(circle at 70.00% 47.622358709262116%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    70.33% { background: radial-gradient(circle at 70.33% 47.606701256169835%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    70.67% { background: radial-gradient(circle at 70.67% 47.592093583005855%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    71.00% { background: radial-gradient(circle at 71.00% 47.57854209717842%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    71.33% { background: radial-gradient(circle at 71.33% 47.5660527428171%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    71.67% { background: radial-gradient(circle at 71.67% 47.554630998165486%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    72.00% { background: radial-gradient(circle at 72.00% 47.54428187317828%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    72.33% { background: radial-gradient(circle at 72.33% 47.53500990732374%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    72.67% { background: radial-gradient(circle at 72.67% 47.52681916759253%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    73.00% { background: radial-gradient(circle at 73.00% 47.519713246713806%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    73.33% { background: radial-gradient(circle at 73.33% 47.513695261579315%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    73.67% { background: radial-gradient(circle at 73.67% 47.50876785187624%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    74.00% { background: radial-gradient(circle at 74.00% 47.50493317892932%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    74.33% { background: radial-gradient(circle at 74.33% 47.502192924752855%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    74.67% { background: radial-gradient(circle at 74.67% 47.50054829131289%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    75.00% { background: radial-gradient(circle at 75.00% 47.5%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    75.33% { background: radial-gradient(circle at 75.33% 47.50054829131289%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    75.67% { background: radial-gradient(circle at 75.67% 47.502192924752855%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    76.00% { background: radial-gradient(circle at 76.00% 47.50493317892932%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    76.33% { background: radial-gradient(circle at 76.33% 47.508767851876236%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    76.67% { background: radial-gradient(circle at 76.67% 47.513695261579315%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    77.00% { background: radial-gradient(circle at 77.00% 47.519713246713806%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    77.33% { background: radial-gradient(circle at 77.33% 47.52681916759253%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    77.67% { background: radial-gradient(circle at 77.67% 47.53500990732374%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    78.00% { background: radial-gradient(circle at 78.00% 47.54428187317828%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    78.33% { background: radial-gradient(circle at 78.33% 47.554630998165486%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    78.67% { background: radial-gradient(circle at 78.67% 47.5660527428171%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    79.00% { background: radial-gradient(circle at 79.00% 47.57854209717842%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    79.33% { background: radial-gradient(circle at 79.33% 47.592093583005855%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    79.67% { background: radial-gradient(circle at 79.67% 47.60670125616983%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    80.00% { background: radial-gradient(circle at 80.00% 47.622358709262116%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    80.33% { background: radial-gradient(circle at 80.33% 47.6390590744063%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    80.67% { background: radial-gradient(circle at 80.67% 47.656795026270274%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    81.00% { background: radial-gradient(circle at 81.00% 47.67555878527937%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    81.33% { background: radial-gradient(circle at 81.33% 47.69534212102875%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    81.67% { background: radial-gradient(circle at 81.67% 47.7161363558935%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    82.00% { background: radial-gradient(circle at 82.00% 47.73793236883495%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    82.33% { background: radial-gradient(circle at 82.33% 47.760720599401466%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    82.67% { background: radial-gradient(circle at 82.67% 47.78449105192196%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    83.00% { background: radial-gradient(circle at 83.00% 47.80923329989034%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    83.33% { background: radial-gradient(circle at 83.33% 47.8349364905389%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    83.67% { background: radial-gradient(circle at 83.67% 47.86158934959873%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    84.00% { background: radial-gradient(circle at 84.00% 47.889180186244964%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    84.33% { background: radial-gradient(circle at 84.33% 47.91769689822475%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    84.67% { background: radial-gradient(circle at 84.67% 47.94712697716574%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    85.00% { background: radial-gradient(circle at 85.00% 47.97745751406263%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    85.33% { background: radial-gradient(circle at 85.33% 48.00867520493951%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    85.67% { background: radial-gradient(circle at 85.67% 48.0407663566854%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    86.00% { background: radial-gradient(circle at 86.00% 48.07371689306053%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    86.33% { background: radial-gradient(circle at 86.33% 48.10751236087061%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    86.67% { background: radial-gradient(circle at 86.67% 48.14213793630651%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    87.00% { background: radial-gradient(circle at 87.00% 48.17757843144647%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    87.33% { background: radial-gradient(circle at 87.33% 48.21381830091799%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    87.67% { background: radial-gradient(circle at 87.67% 48.25084164871659%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    88.00% { background: radial-gradient(circle at 88.00% 48.28863223517828%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    88.33% { background: radial-gradient(circle at 88.33% 48.32717348410285%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    88.67% { background: radial-gradient(circle at 88.67% 48.36644849002474%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    89.00% { background: radial-gradient(circle at 89.00% 48.40644002562828%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    89.33% { background: radial-gradient(circle at 89.33% 48.44713054930423%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    89.67% { background: radial-gradient(circle at 89.67% 48.48850221284406%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    90.00% { background: radial-gradient(circle at 90.00% 48.530536869268815%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    90.33% { background: radial-gradient(circle at 90.33% 48.57321608078892%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    90.67% { background: radial-gradient(circle at 90.67% 48.61652112689164%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    91.00% { background: radial-gradient(circle at 91.00% 48.66043301255251%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    91.33% { background: radial-gradient(circle at 91.33% 48.70493247656717%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    91.67% { background: radial-gradient(circle at 91.67% 48.75%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    92.00% { background: radial-gradient(circle at 92.00% 48.79561581474571%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    92.33% { background: radial-gradient(circle at 92.33% 48.841759912200345%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    92.67% { background: radial-gradient(circle at 92.67% 48.88841205203768%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    93.00% { background: radial-gradient(circle at 93.00% 48.93555177108732%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    93.33% { background: radial-gradient(circle at 93.33% 48.9831583923105%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    93.67% { background: radial-gradient(circle at 93.67% 49.031211033869745%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    94.00% { background: radial-gradient(circle at 94.00% 49.0796886182883%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    94.33% { background: radial-gradient(circle at 94.33% 49.12856988169546%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    94.67% { background: radial-gradient(circle at 94.67% 49.17783338315354%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    95.00% { background: radial-gradient(circle at 95.00% 49.22745751406263%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    95.33% { background: radial-gradient(circle at 95.33% 49.27742050763882%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    95.67% { background: radial-gradient(circle at 95.67% 49.32770044846183%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    96.00% { background: radial-gradient(circle at 96.00% 49.37827528208786%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    96.33% { background: radial-gradient(circle at 96.33% 49.42912282472336%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    96.67% { background: radial-gradient(circle at 96.67% 49.4802207729556%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    97.00% { background: radial-gradient(circle at 97.00% 49.53154671353569%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    97.33% { background: radial-gradient(circle at 97.33% 49.583078133209746%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    97.67% { background: radial-gradient(circle at 97.67% 49.63479242859397%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    98.00% { background: radial-gradient(circle at 98.00% 49.68666691608924%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    98.33% { background: radial-gradient(circle at 98.33% 49.73867884183086%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    98.67% { background: radial-gradient(circle at 98.67% 49.79080539166921%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    99.00% { background: radial-gradient(circle at 99.00% 49.84302370117672%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    99.33% { background: radial-gradient(circle at 99.33% 49.895310865677%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    99.67% { background: radial-gradient(circle at 99.67% 49.94764395029161%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+    100.00% { background: radial-gradient(circle at 100.00% 50%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); }
+}
 
 .AvailableCourses {
     text-align: center;
-    margin: 20px auto; 
-    padding: 20px; 
-     
-    background: rgb(240, 204, 5);
-    background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%); 
-    border: none; 
-    border-radius: 12px; 
+    margin: 20px auto;
+    padding: 20px;
+    background: radial-gradient(circle at 0% 50%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
+    border: none;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+    animation: waveLight 3s infinite;
     
-    font-family: Arial, sans-serif; 
 }
 
 .AvailableCourses h2 {
@@ -242,7 +543,7 @@ footer {
 .AvailableCourses p {
     font-size: 24px;
     font-weight: bold;
-    color: rgb(255, 255, 255); 
+    color: #000000; 
 }
 
 .hidden {

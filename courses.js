@@ -201,6 +201,7 @@ function displayCourseDetails(code) {
     `;
 }
 
+
 const courseData = {
     "backgroundHC": {
         title: "Higher Certificate",
@@ -402,6 +403,9 @@ function updateCompletedList() {
             window.location.href = `admissions.html?courseId=${courseId}`;
         });
     });
+
+    
+    
 
     
 
