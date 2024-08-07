@@ -166,7 +166,7 @@ document.getElementById('search-button').addEventListener('click', function() {
             courseItem.classList.add('course-item');
             courseItem.textContent = course.title;
 
-            // Display course details for the first match
+            
             if (!found) {
                 displayCourseDetails(code);
                 found = true;
@@ -177,7 +177,7 @@ document.getElementById('search-button').addEventListener('click', function() {
     }
     
 
-    // Show or hide the course details section and print button based on search results
+    
     const courseDetailsSection = document.getElementById('course-details-section');
 if (found) {
     console.log('Course found. Removing hidden class.');
@@ -208,16 +208,16 @@ const courseData = {
         duration: "1 year",
         description: "This is a higher certificate course.",
         modules: [
-            { name: "Introduction to Economics", lecturer: "Dr. Smith", venue: "Room 101", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Principles of Marketing", lecturer: "Ms. Johnson", venue: "Room 102", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Advanced Calculus", lecturer: "Dr. Williams", venue: "Room 103", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Introduction to Psychology", lecturer: "Mr. Brown", venue: "Room 104", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Fundamentals of Finance", lecturer: "Dr. Lee", venue: "Room 105", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Human Resource Management", lecturer: "Ms. Davis", venue: "Room 106", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Introduction to Computer Science", lecturer: "Dr. Wilson", venue: "Room 107", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Business Law", lecturer: "Mr. Miller", venue: "Room 108", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Environmental Science", lecturer: "Dr. Moore", venue: "Room 109", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Introduction to Philosophy", lecturer: "Ms. Taylor", venue: "Room 110", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" }
+            { name: "Introduction to Economics", lecturer: "Dr. Smith", venue: "Room 101", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Principles of Marketing", lecturer: "Ms. Johnson", venue: "Room 102", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Advanced Calculus", lecturer: "Dr. Williams", venue: "Room 103", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Introduction to Psychology", lecturer: "Mr. Brown", venue: "Room 104", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Fundamentals of Finance", lecturer: "Dr. Lee", venue: "Room 105", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Human Resource Management", lecturer: "Ms. Davis", venue: "Room 106", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Introduction to Computer Science", lecturer: "Dr. Wilson", venue: "Room 107", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Business Law", lecturer: "Mr. Miller", venue: "Room 108", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Environmental Science", lecturer: "Dr. Moore", venue: "Room 109", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Introduction to Philosophy", lecturer: "Ms. Taylor", venue: "Room 110", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" }
         ]
         
     },
@@ -227,18 +227,19 @@ const courseData = {
         duration: "2 years",
         description: "This is a diploma courseThis empowering diploma features on-trend specialisations aligned with real-world industry requirements. These specialisations will give you access to many exciting career opportunities and allow you to graduate in high demand.",
         modules: [
-            { name: "Introduction to Programming", lecturer: "Prof. Brown", venue: "Room 201", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Network Security", lecturer: "Dr. Adams", venue: "Room 301", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Software Engineering", lecturer: "Ms. Green", venue: "Room 302", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Database Systems", lecturer: "Dr. Miller", venue: "Room 303", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Web Development", lecturer: "Ms. Johnson", venue: "Room 304", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Artificial Intelligence", lecturer: "Dr. Lee", venue: "Room 305", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Machine Learning", lecturer: "Ms. Davis", venue: "Room 306", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Cyber Forensics", lecturer: "Dr. Wilson", venue: "Room 307", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Cloud Computing", lecturer: "Ms. Clark", venue: "Room 308", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Data Science", lecturer: "Dr. Roberts", venue: "Room 309", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Internet of Things", lecturer: "Ms. Taylor", venue: "Room 310", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" }
+            { name: "Introduction to Programming", lecturer: "Prof. Brown", venue: "Room 201", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Network Security", lecturer: "Dr. Adams", venue: "Room 301", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Software Engineering", lecturer: "Ms. Green", venue: "Room 302", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Database Systems", lecturer: "Dr. Miller", venue: "Room 303", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Web Development", lecturer: "Ms. Johnson", venue: "Room 304", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Artificial Intelligence", lecturer: "Dr. Lee", venue: "Room 305", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Machine Learning", lecturer: "Ms. Davis", venue: "Room 306", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Cyber Forensics", lecturer: "Dr. Wilson", venue: "Room 307", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Cloud Computing", lecturer: "Ms. Clark", venue: "Room 308", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Data Science", lecturer: "Dr. Roberts", venue: "Room 309", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Internet of Things", lecturer: "Ms. Taylor", venue: "Room 310", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" }
         ]
+        
         
         
     },
@@ -249,17 +250,18 @@ const courseData = {
         duration: "4 years",
         description: "Our Bachelor of Computing degree will teach you the essential computing skills of troubleshooting and formulating viable solutions. Additionally, you will learn to apply theories and integrate them in real-world environments, across multiple disciplines, by presenting best practices and solutions.",
         modules: [
-            { name: "Financial Accounting", lecturer: "Mr. Harris", venue: "Room 401", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Marketing Management", lecturer: "Ms. Clark", venue: "Room 402", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Business Law", lecturer: "Dr. Adams", venue: "Room 403", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Corporate Finance", lecturer: "Ms. Turner", venue: "Room 404", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Human Resource Management", lecturer: "Mr. White", venue: "Room 405", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Operations Management", lecturer: "Dr. Young", venue: "Room 406", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "International Business", lecturer: "Ms. Green", venue: "Room 407", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Strategic Management", lecturer: "Mr. Brown", venue: "Room 408", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "E-commerce", lecturer: "Dr. King", venue: "Room 409", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Project Management", lecturer: "Ms. Lee", venue: "Room 410", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" }
+            { name: "Financial Accounting", lecturer: "Mr. Harris", venue: "Room 401", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Marketing Management", lecturer: "Ms. Clark", venue: "Room 402", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Business Law", lecturer: "Dr. Adams", venue: "Room 403", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Corporate Finance", lecturer: "Ms. Turner", venue: "Room 404", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Human Resource Management", lecturer: "Mr. White", venue: "Room 405", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Operations Management", lecturer: "Dr. Young", venue: "Room 406", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "International Business", lecturer: "Ms. Green", venue: "Room 407", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Strategic Management", lecturer: "Mr. Brown", venue: "Room 408", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "E-commerce", lecturer: "Dr. King", venue: "Room 409", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Project Management", lecturer: "Ms. Lee", venue: "Room 410", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" }
         ]
+        
         
         
     },
@@ -269,17 +271,18 @@ const courseData = {
         duration: "3 years",
         description: "A bachelor’s degree remains the entry standard in many professional careers. Its long-term benefits make it well worth the initial investment as it allows you professional entry into some of the top names in IT. It will also give you the knowledge and skills to create your own enterprise within the sector. Overall, an IT degree is a worthwhile investment in your future.",
         modules: [
-            { name: "Network Security", lecturer: "Dr. Adams", venue: "Room 301", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Software Engineering", lecturer: "Ms. Green", venue: "Room 302", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Database Systems", lecturer: "Dr. Miller", venue: "Room 303", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Web Development", lecturer: "Ms. Johnson", venue: "Room 304", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Artificial Intelligence", lecturer: "Dr. Lee", venue: "Room 305", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Machine Learning", lecturer: "Ms. Davis", venue: "Room 306", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Cyber Forensics", lecturer: "Dr. Wilson", venue: "Room 307", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Cloud Computing", lecturer: "Ms. Clark", venue: "Room 308", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Data Science", lecturer: "Dr. Roberts", venue: "Room 309", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
-            { name: "Internet of Things", lecturer: "Ms. Taylor", venue: "Room 310", studyGuide: "https://www.belgiumcampus.ac.za/wp-content/uploads/2021/06/Mathematical-Literacy-Via-Afrika-Grade-12-English.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" }
+            { name: "Network Security", lecturer: "Dr. Adams", venue: "Room 301", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Software Engineering", lecturer: "Ms. Green", venue: "Room 302", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Database Systems", lecturer: "Dr. Miller", venue: "Room 303", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Web Development", lecturer: "Ms. Johnson", venue: "Room 304", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Artificial Intelligence", lecturer: "Dr. Lee", venue: "Room 305", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Machine Learning", lecturer: "Ms. Davis", venue: "Room 306", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Cyber Forensics", lecturer: "Dr. Wilson", venue: "Room 307", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Cloud Computing", lecturer: "Ms. Clark", venue: "Room 308", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Data Science", lecturer: "Dr. Roberts", venue: "Room 309", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" },
+            { name: "Internet of Things", lecturer: "Ms. Taylor", venue: "Room 310", studyGuide: "WPR 271 Study Guide [2024] v1.4.pdf", video: "https://www.youtube.com/watch?v=qAoSZ6asCq4" }
         ]
+        
         
         
     },
@@ -342,13 +345,13 @@ document.querySelectorAll('.course-title').forEach(header => {
                 tableBody.appendChild(row);
             });
 
-            // Add click event listeners for the "Mark as Completed" buttons
+            
             document.querySelectorAll('.complete-btn').forEach(button => {
                 button.addEventListener('click', function() {
                     const index = this.getAttribute('data-index');
                     const moduleName = course.modules[index].name;
 
-                    // Toggle completion state
+                   
                     if (completedModules.has(moduleName)) {
                         completedModules.delete(moduleName);
                         this.textContent = 'Mark as Completed';
@@ -388,9 +391,9 @@ function updateCompletedList() {
     }
 }
 
-    // Print button functionality
+   
     document.getElementById('printCourseButton').addEventListener('click', () => {
-        window.print(); // Opens the print dialog
+        window.print(); 
     });
 
     document.querySelectorAll('.enroll-btn').forEach(button => {
